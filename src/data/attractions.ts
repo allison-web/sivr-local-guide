@@ -260,7 +260,7 @@ export const attractions: Attraction[] = [
     description: 'With a local cult following and located steps from SIU, Harbaugh\'s is Carbondale in breakfast form. Open everyday until 2pm with mimosas, coffee and food options for all.',
     location: 'Carbondale, IL',
     distance: '25 min drive',
-    image: '/images/attractions/harbaughs-cafe.jpg',
+    image: '/images/attractions/harbaughs-cafe.png',
     highlights: ['Local Cult Following', 'Mimosas', 'Cozy Atmosphere'],
   },
   {
