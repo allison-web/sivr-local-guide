@@ -248,7 +248,7 @@ export const attractions: Attraction[] = [
     description: 'Located in a historic dealership, the building alone is worth the visit. Think comfort food meets Breakfast at Tiffany\'s. The aesthetic is designed to absolute perfection!',
     location: 'Murphysboro, IL',
     distance: '20 min drive',
-    image: 'https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=800&q=80',
+    image: '/images/attractions/faye.png',
     highlights: ['Historic Building', 'Top Notch Service', 'Patio with Fire Pits'],
   },
   {
