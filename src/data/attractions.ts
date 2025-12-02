@@ -224,7 +224,7 @@ export const attractions: Attraction[] = [
     description: 'Don\'t let a little wait discourage you—great things are worth it! Known for their seasonally curated menu, every dish is a feast for the eyes and palate. Cash only, so stop by the ATM!',
     location: 'Cobden, IL',
     distance: '30 min drive',
-    image: '/images/attractions/iron-whisk.jpg',
+    image: '/images/attractions/iron-whisk.png',
     highlights: ['Seasonal Menu', 'Epic Flavors', 'Outdoor Seating'],
   },
   {
