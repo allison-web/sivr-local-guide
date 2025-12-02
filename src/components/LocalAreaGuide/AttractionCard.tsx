@@ -1,5 +1,5 @@
-import { MapPin, Clock, ExternalLink, Phone } from 'lucide-react';
-import { Attraction } from '@/data/attractions';
+import { MapPin, Clock, ExternalLink, Phone, Navigation } from 'lucide-react';
+import { Attraction, Region } from '@/data/attractions';
 import { cn } from '@/lib/utils';
 
 interface AttractionCardProps {
@@ -13,6 +13,12 @@ const categoryLabels: Record<string, string> = {
   outdoors: 'Great Outdoors',
   rainy: 'Rainy Day Fun',
   wineries: 'Wineries',
+};
+
+const regionLabels: Record<Region, string> = {
+  west: 'West',
+  central: 'Central',
+  east: 'East',
 };
 
 const AttractionCard = ({ attraction, index }: AttractionCardProps) => {
@@ -37,6 +43,12 @@ const AttractionCard = ({ attraction, index }: AttractionCardProps) => {
         {/* Category Badge */}
         <span className="absolute left-3 top-3 rounded-full bg-card/90 px-2.5 py-1 text-xs font-medium text-foreground backdrop-blur-sm">
           {categoryLabels[attraction.category] || attraction.category}
+        </span>
+        
+        {/* Region Badge */}
+        <span className="absolute right-3 top-3 inline-flex items-center gap-1 rounded-full bg-sivr-blue/90 px-2.5 py-1 text-xs font-medium text-white backdrop-blur-sm">
+          <Navigation className="h-3 w-3" />
+          {regionLabels[attraction.region]}
         </span>
       </div>
 
