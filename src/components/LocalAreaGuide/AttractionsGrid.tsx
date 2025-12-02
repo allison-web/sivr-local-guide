@@ -12,29 +12,35 @@ const AttractionsGrid = () => {
   }, [activeCategory]);
 
   return (
-    <section className="bg-background py-16 sm:py-20">
+    <section className="bg-background py-12 sm:py-16">
       <div className="container mx-auto max-w-7xl px-4">
         {/* Section Header */}
-        <div className="mb-12 text-center">
-          <h2 className="font-display text-3xl font-semibold text-foreground sm:text-4xl">
-            Explore the Area
+        <div className="mb-8 sm:mb-12 text-center">
+          <h2 className="font-display text-2xl sm:text-3xl lg:text-4xl font-semibold text-foreground">
+            Explore Southern Illinois
           </h2>
-          <p className="mx-auto mt-4 max-w-2xl text-muted-foreground">
+          <p className="mx-auto mt-3 sm:mt-4 max-w-2xl text-sm sm:text-base text-muted-foreground">
             From breathtaking natural wonders to award-winning wineries, discover 
-            everything Southern Illinois has to offer during your stay.
+            everything this beautiful region has to offer during your stay.
           </p>
         </div>
 
         {/* Category Filter */}
-        <div className="mb-10">
+        <div className="mb-8 sm:mb-10">
           <CategoryFilter
             activeCategory={activeCategory}
             onCategoryChange={setActiveCategory}
           />
         </div>
 
+        {/* Results Count */}
+        <p className="mb-6 text-center text-sm text-muted-foreground">
+          Showing {filteredAttractions.length} {filteredAttractions.length === 1 ? 'place' : 'places'}
+          {activeCategory !== 'all' && ' in this category'}
+        </p>
+
         {/* Attractions Grid */}
-        <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+        <div className="grid gap-4 sm:gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {filteredAttractions.map((attraction, index) => (
             <AttractionCard
               key={attraction.id}
@@ -46,8 +52,8 @@ const AttractionsGrid = () => {
 
         {/* Empty State */}
         {filteredAttractions.length === 0 && (
-          <div className="py-16 text-center">
-            <p className="text-lg text-muted-foreground">
+          <div className="py-12 sm:py-16 text-center">
+            <p className="text-base sm:text-lg text-muted-foreground">
               No attractions found in this category.
             </p>
           </div>
