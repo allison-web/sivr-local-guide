@@ -236,7 +236,7 @@ export const attractions: Attraction[] = [
     description: 'Through delicious crepes, refreshing tea and unique atmosphere, Blend has made a name for itself as a Carbondale favorite. Perfect for a quick lunch or long study session.',
     location: 'Carbondale, IL',
     distance: '25 min drive',
-    image: '/images/attractions/blend-tea.jpg',
+    image: '/images/attractions/blend-tea.png',
     highlights: ['Sweet & Savory Crepes', 'Custom Drinks', 'Near SIU Campus'],
   },
   {
