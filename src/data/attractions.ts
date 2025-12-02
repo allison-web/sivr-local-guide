@@ -321,7 +321,7 @@ export const attractions: Attraction[] = [
     description: 'Located in a 100 year old bank on the Marion Square. Great spot to start your day with friendly staff and a welcoming environment. All the usual breakfast suspects!',
     location: 'Marion, IL',
     distance: '15 min drive',
-    image: 'https://images.unsplash.com/photo-1554118811-1e0d58224f24?w=800&q=80',
+    image: '/images/attractions/vault-cafe.jpg',
     highlights: ['Historic Bank Building', 'On the Square', 'Friendly Service'],
   },
   {
@@ -333,7 +333,7 @@ export const attractions: Attraction[] = [
     description: 'A Southern Illinois institution since 1939! This sandstone-and-wood lodge inside Giant City State Park is famous for family-style fried chicken dinners. Hearty portions and endless coffee.',
     location: 'Makanda, IL',
     distance: '25 min drive',
-    image: 'https://images.unsplash.com/photo-1606787366850-de6330128bfc?w=800&q=80',
+    image: '/images/attractions/giant-city-lodge.jpg',
     highlights: ['Family-Style Dining', 'Famous Fried Chicken', 'Historic Lodge'],
     website: 'https://giantcitylodge.com/',
     phone: '(618) 457-4921',
@@ -361,7 +361,7 @@ export const attractions: Attraction[] = [
     description: 'An authentic Filipino restaurant with a vast menu of fresh, colorful, and flavorful dishes. Tip: The Shumai and Lumpia apps are a must try!',
     location: 'Marion, IL',
     distance: '15 min drive',
-    image: 'https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=800&q=80',
+    image: '/images/attractions/ma-filipino.jpg',
     highlights: ['Authentic Filipino', 'Fresh & Colorful', 'Sample Menu Items'],
   },
   {
@@ -397,7 +397,7 @@ export const attractions: Attraction[] = [
     description: 'Our favorite "rainy-day" place to take the kids! Full of billiards, bocce and other fun entertainment that makes you forget about being cooped up inside.',
     location: 'Marion, IL',
     distance: '15 min drive',
-    image: 'https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=800&q=80',
+    image: '/images/attractions/pookies.jpg',
     highlights: ['Bocce Courts', 'Billiards', 'Family Friendly'],
   },
   {
@@ -541,7 +541,7 @@ export const attractions: Attraction[] = [
     description: 'The native Marionite\'s favorite! Try the double decker pizza and taco nachos. Excellent service, usually short wait times.',
     location: 'Marion, IL',
     distance: '15 min drive',
-    image: 'https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=800&q=80',
+    image: '/images/attractions/walts-pizza.jpg',
     highlights: ['Double Decker Pizza', 'Taco Nachos', 'Local Favorite'],
   },
   {
@@ -592,7 +592,7 @@ export const attractions: Attraction[] = [
     description: 'Steak and seafood with live piano set against a roaring 20s backdrop. Make-your-own s\'mores and the largest wine cellar in Southern Illinois with 400+ vintage wines!',
     location: 'Marion, IL',
     distance: '15 min drive',
-    image: 'https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=800&q=80',
+    image: '/images/attractions/20s-hideout.jpg',
     highlights: ['Live Piano', 'Wine Cellar', 'Make-Your-Own S\'mores'],
   },
   {
@@ -616,7 +616,7 @@ export const attractions: Attraction[] = [
     description: 'Great date night venue on Kokopelli Golf Course. Upscale gastro-pub style eats with beautiful views.',
     location: 'Marion, IL',
     distance: '15 min drive',
-    image: 'https://images.unsplash.com/photo-1559339352-11d035aa65de?w=800&q=80',
+    image: '/images/attractions/the-turn.jpg',
     highlights: ['Golf Course Views', 'Gastro-Pub', 'Upscale'],
   },
   {
@@ -628,7 +628,7 @@ export const attractions: Attraction[] = [
     description: 'Features hand-made, fresh, elevated food experience with seasonal menus. Handcrafted cocktails and mocktails. Definitely leave room for dessert! Reservations highly recommended.',
     location: 'Benton, IL',
     distance: '25 min drive',
-    image: 'https://images.unsplash.com/photo-1559339352-11d035aa65de?w=800&q=80',
+    image: '/images/attractions/seasoning-bistro.jpg',
     highlights: ['Seasonal Menu', 'Craft Cocktails', 'Save Room for Dessert'],
   },
   {
@@ -702,7 +702,7 @@ export const attractions: Attraction[] = [
     description: 'Serving So ILL since 1977! This throwback bakery offers fresh cookies, pastries, cakes, and full espresso menu with organic, fair trade coffee. Home of the original pink cookie!',
     location: 'Carbondale, IL',
     distance: '25 min drive',
-    image: 'https://images.unsplash.com/photo-1558961363-fa8fdf82db35?w=800&q=80',
+    image: '/images/attractions/cristaudos.jpg',
     highlights: ['Since 1977', 'Original Pink Cookie', 'Organic Coffee'],
   },
   {
