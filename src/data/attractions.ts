@@ -226,6 +226,7 @@ export const attractions: Attraction[] = [
     distance: '30 min drive',
     image: '/images/attractions/iron-whisk.png',
     highlights: ['Seasonal Menu', 'Epic Flavors', 'Outdoor Seating'],
+    website: 'https://www.theironwhisk.com/',
   },
   {
     id: 'blend-tea',
@@ -238,6 +239,7 @@ export const attractions: Attraction[] = [
     distance: '25 min drive',
     image: '/images/attractions/blend-tea.png',
     highlights: ['Sweet & Savory Crepes', 'Custom Drinks', 'Near SIU Campus'],
+    phone: '(618) 319-1441',
   },
   {
     id: 'faye',
@@ -250,6 +252,8 @@ export const attractions: Attraction[] = [
     distance: '20 min drive',
     image: '/images/attractions/faye.png',
     highlights: ['Historic Building', 'Top Notch Service', 'Patio with Fire Pits'],
+    website: 'https://www.eatatfaye.com/',
+    phone: '(618) 684-4477',
   },
   {
     id: 'harbaughs',
@@ -262,6 +266,8 @@ export const attractions: Attraction[] = [
     distance: '25 min drive',
     image: '/images/attractions/harbaughs-cafe.png',
     highlights: ['Local Cult Following', 'Mimosas', 'Cozy Atmosphere'],
+    website: 'https://harbaughscafe.net/',
+    phone: '(618) 351-9897',
   },
   {
     id: 'longbranch',
@@ -287,6 +293,7 @@ export const attractions: Attraction[] = [
     distance: '15 min drive',
     image: '/images/attractions/618-tap-house.jpg',
     highlights: ['Sunday Brunch', 'Bloody Mary Bar', 'Fire Pit Patio'],
+    website: 'https://618-tap-house.site/',
   },
   {
     id: 'mary-lous',
@@ -299,6 +306,7 @@ export const attractions: Attraction[] = [
     distance: '25 min drive',
     image: '/images/attractions/mary-lous-grill.jpg',
     highlights: ['Famous Biscuits & Gravy', 'Counter Seating', 'Classic Diner'],
+    phone: '(618) 457-5084',
   },
   {
     id: 'shotgun-eddys',
@@ -311,6 +319,8 @@ export const attractions: Attraction[] = [
     distance: '40 min drive',
     image: 'https://images.unsplash.com/photo-1466978913421-dad2ebd01d17?w=800&q=80',
     highlights: ['Scenic Drive', 'Prime Rib Sandwich', 'Live Entertainment'],
+    website: 'https://shotguneddys.com/',
+    phone: '(618) 672-3339',
   },
   {
     id: 'vault-cafe',
@@ -323,6 +333,7 @@ export const attractions: Attraction[] = [
     distance: '15 min drive',
     image: '/images/attractions/vault-cafe.jpg',
     highlights: ['Historic Bank Building', 'On the Square', 'Friendly Service'],
+    phone: '(618) 993-9010',
   },
   {
     id: 'giant-city-lodge',
@@ -399,6 +410,7 @@ export const attractions: Attraction[] = [
     distance: '15 min drive',
     image: '/images/attractions/pookies.jpg',
     highlights: ['Bocce Courts', 'Billiards', 'Family Friendly'],
+    phone: '(618) 997-3690',
   },
   {
     id: 'kitchen-lafayette',
@@ -411,6 +423,7 @@ export const attractions: Attraction[] = [
     distance: '35 min drive',
     image: 'https://images.unsplash.com/photo-1466637574441-749b8f19452f?w=800&q=80',
     highlights: ['Chef\'s Specials', 'Homemade Bread', 'Dessert Included'],
+    website: 'https://www.thekitchenonlafayette.com/',
   },
   {
     id: 'cummares',
@@ -435,6 +448,8 @@ export const attractions: Attraction[] = [
     distance: '25 min drive',
     image: 'https://images.unsplash.com/photo-1559314809-0d155014e29e?w=800&q=80',
     highlights: ['Authentic Thai', 'Custom Spice Level', 'Vegetarian Options'],
+    website: 'https://thaitastecarbondale.com/',
+    phone: '(618) 457-6900',
   },
   {
     id: 'bennies',
@@ -447,6 +462,8 @@ export const attractions: Attraction[] = [
     distance: '15 min drive',
     image: 'https://images.unsplash.com/photo-1498579150354-977475b7ea0b?w=800&q=80',
     highlights: ['Famous Garlic Dressing', 'Italian Classics', 'Historic Tamales'],
+    website: 'https://benniesitalianfoods.com/',
+    phone: '(618) 997-6736',
   },
   {
     id: 'bombay-olive',
@@ -471,6 +488,7 @@ export const attractions: Attraction[] = [
     distance: '25 min drive',
     image: '/images/attractions/italian-village.jpg',
     highlights: ['Write on the Wall', 'Great Pizza', 'Outdoor Seating'],
+    website: 'https://italianvillagecarbondale.com/',
   },
   {
     id: 'hunan',
@@ -483,6 +501,7 @@ export const attractions: Attraction[] = [
     distance: '25 min drive',
     image: 'https://images.unsplash.com/photo-1563245372-f21724e3856d?w=800&q=80',
     highlights: ['Since 1987', 'Regional Chinese', 'Wide Selection'],
+    website: 'https://www.hunaninc.com/',
   },
   {
     id: 'mases-place',
@@ -495,6 +514,7 @@ export const attractions: Attraction[] = [
     distance: '25 min drive',
     image: 'https://images.unsplash.com/photo-1544025162-d76694265947?w=800&q=80',
     highlights: ['Smoked Pork', 'Brisket Burger', 'Near Little Grand Canyon'],
+    website: 'https://www.masesplace.com/',
   },
   {
     id: 'new-kahala',
@@ -507,6 +527,7 @@ export const attractions: Attraction[] = [
     distance: '25 min drive',
     image: 'https://images.unsplash.com/photo-1569718212165-3a8278d5f624?w=800&q=80',
     highlights: ['Try the Bao', 'Generous Portions', 'Taiwanese Dishes'],
+    website: 'https://newkahala.com/',
   },
   {
     id: 'triple-e-bbq',
@@ -531,6 +552,7 @@ export const attractions: Attraction[] = [
     distance: '20 min drive',
     image: 'https://images.unsplash.com/photo-1550547660-d9450f859349?w=800&q=80',
     highlights: ['75+ Years Family Owned', '80 Cent Burgers', 'Affordable'],
+    phone: '(618) 988-9210',
   },
   {
     id: 'walts-pizza',
@@ -543,6 +565,8 @@ export const attractions: Attraction[] = [
     distance: '15 min drive',
     image: '/images/attractions/walts-pizza.jpg',
     highlights: ['Double Decker Pizza', 'Taco Nachos', 'Local Favorite'],
+    website: 'https://waltspizza.com/',
+    phone: '(618) 993-8668',
   },
   {
     id: 'etown-river',
@@ -568,6 +592,7 @@ export const attractions: Attraction[] = [
     distance: '55 min drive',
     image: 'https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=800&q=80',
     highlights: ['Ohio River Views', 'AYCE Buffet', 'Live Music'],
+    website: 'http://www.caveinrockkaylors.com/',
   },
 
   // FOOD + BEVERAGE - DATE NIGHT
@@ -594,6 +619,8 @@ export const attractions: Attraction[] = [
     distance: '15 min drive',
     image: '/images/attractions/20s-hideout.jpg',
     highlights: ['Live Piano', 'Wine Cellar', 'Make-Your-Own S\'mores'],
+    website: 'https://hideoutsteakhouse.com/',
+    phone: '(618) 997-8325',
   },
   {
     id: 'flame-grill',
@@ -606,6 +633,8 @@ export const attractions: Attraction[] = [
     distance: '25 min drive',
     image: '/images/attractions/flame-grill.jpg',
     highlights: ['Wine & Whiskey', 'Manicured Patio', 'Upscale Ambiance'],
+    website: 'https://flamecarbondale.com/',
+    phone: '(618) 351-8242',
   },
   {
     id: 'the-turn',
@@ -630,6 +659,7 @@ export const attractions: Attraction[] = [
     distance: '25 min drive',
     image: '/images/attractions/seasoning-bistro.jpg',
     highlights: ['Seasonal Menu', 'Craft Cocktails', 'Save Room for Dessert'],
+    website: 'https://seasoningbistro.com/',
   },
   {
     id: 'marys-restaurant',
@@ -642,6 +672,8 @@ export const attractions: Attraction[] = [
     distance: '20 min drive',
     image: 'https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=800&q=80',
     highlights: ['Victorian House', 'Prime Steaks', 'Fine Dining'],
+    website: 'http://www.marysfinedining.com/',
+    phone: '(618) 942-2742',
   },
   {
     id: 'thai-d',
@@ -654,6 +686,8 @@ export const attractions: Attraction[] = [
     distance: '15 min drive',
     image: 'https://images.unsplash.com/photo-1559314809-0d155014e29e?w=800&q=80',
     highlights: ['Amazing Curry', 'Premium Thai Spices', 'Warm Hospitality'],
+    website: 'https://www.thaidrestaurant.com/',
+    phone: '(618) 997-6470',
   },
   {
     id: 'underground-public-house',
@@ -666,6 +700,7 @@ export const attractions: Attraction[] = [
     distance: '25 min drive',
     image: 'https://images.unsplash.com/photo-1514933651103-005eec06c04b?w=800&q=80',
     highlights: ['Craft Butchered Meats', 'Seasonal Menu', 'Innovative Cocktails'],
+    website: 'https://undergroundpublichouse.net/',
   },
   {
     id: 'little-nashville',
@@ -678,6 +713,7 @@ export const attractions: Attraction[] = [
     distance: '15 min drive',
     image: 'https://images.unsplash.com/photo-1466978913421-dad2ebd01d17?w=800&q=80',
     highlights: ['Flatbreads', 'Nashville Inspired', 'Live Entertainment'],
+    phone: '(618) 710-6002',
   },
 
   // FOOD + BEVERAGE - SWEET TREATS
@@ -692,6 +728,8 @@ export const attractions: Attraction[] = [
     distance: '45 min drive',
     image: 'https://images.unsplash.com/photo-1481391319762-47dff72954d9?w=800&q=80',
     highlights: ['Handmade Chocolate', 'Decadent Fudge', 'Ice Cream'],
+    website: 'https://chocolatefactoryinc.com/',
+    phone: '(618) 949-3829',
   },
   {
     id: 'cristaudos',
@@ -704,6 +742,8 @@ export const attractions: Attraction[] = [
     distance: '25 min drive',
     image: '/images/attractions/cristaudos.jpg',
     highlights: ['Since 1977', 'Original Pink Cookie', 'Organic Coffee'],
+    website: 'https://www.cristaudos.com/',
+    phone: '(618) 529-4303',
   },
   {
     id: 'crown-brew',
@@ -716,6 +756,7 @@ export const attractions: Attraction[] = [
     distance: '15 min drive',
     image: 'https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=800&q=80',
     highlights: ['Insta-Worthy', 'Curated Beverages', 'Historic Downtown'],
+    website: 'https://www.crownbrewcoffee.com/',
   },
   {
     id: 'riverside-mercantile',
