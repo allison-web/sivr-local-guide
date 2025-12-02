@@ -285,7 +285,7 @@ export const attractions: Attraction[] = [
     description: 'Don\'t sleep on their Sunday Brunch! Chicken + biscuit with bacon jam and a Sunday Bloody Mary bar. Indoor booth and high top seating plus outdoor patio with fire-pits.',
     location: 'Marion, IL',
     distance: '15 min drive',
-    image: 'https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=800&q=80',
+    image: '/images/attractions/618-tap-house.jpg',
     highlights: ['Sunday Brunch', 'Bloody Mary Bar', 'Fire Pit Patio'],
   },
   {
