@@ -1,4 +1,4 @@
-import { Compass, Mountain, Waves, Wine, UtensilsCrossed, CloudRain } from 'lucide-react';
+import { Compass, Mountain, Waves, Wine, UtensilsCrossed, CloudRain, Ticket, ShoppingBag } from 'lucide-react';
 import { Category, categories } from '@/data/attractions';
 import { cn } from '@/lib/utils';
 
@@ -9,6 +9,8 @@ const iconMap = {
   Wine,
   UtensilsCrossed,
   CloudRain,
+  Ticket,
+  ShoppingBag,
 };
 
 interface CategoryFilterProps {

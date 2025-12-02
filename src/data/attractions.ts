@@ -1,4 +1,4 @@
-export type Category = 'all' | 'food' | 'lake' | 'outdoors' | 'rainy' | 'wineries';
+export type Category = 'all' | 'food' | 'lake' | 'outdoors' | 'rainy' | 'wineries' | 'thingstodo' | 'essentials';
 export type Region = 'west' | 'central' | 'east';
 
 export interface Attraction {
@@ -18,10 +18,12 @@ export interface Attraction {
 
 export const categories: { id: Category; label: string; icon: string }[] = [
   { id: 'all', label: 'All', icon: 'Compass' },
+  { id: 'food', label: 'Food + Beverage', icon: 'UtensilsCrossed' },
+  { id: 'wineries', label: 'Wineries & Adult Beverages', icon: 'Wine' },
   { id: 'outdoors', label: 'The Great Outdoors', icon: 'Mountain' },
   { id: 'lake', label: 'Lake of Egypt', icon: 'Waves' },
-  { id: 'wineries', label: 'Wineries & Adult Beverages', icon: 'Wine' },
-  { id: 'food', label: 'Food + Beverage', icon: 'UtensilsCrossed' },
+  { id: 'thingstodo', label: 'Things to Do', icon: 'Ticket' },
+  { id: 'essentials', label: 'Essentials', icon: 'ShoppingBag' },
   { id: 'rainy', label: 'Rainy Day Fun', icon: 'CloudRain' },
 ];
 
