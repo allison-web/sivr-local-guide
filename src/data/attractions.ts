@@ -1,5 +1,6 @@
 export type Category = 'all' | 'food' | 'lake' | 'outdoors' | 'rainy' | 'wineries' | 'thingstodo' | 'essentials';
 export type Region = 'west' | 'central' | 'east';
+export type FoodSubcategory = 'breakfast' | 'lunch' | 'datenight' | 'sweets';
 
 export interface Attraction {
   id: string;
@@ -14,7 +15,16 @@ export interface Attraction {
   website?: string;
   phone?: string;
   hours?: string;
+  foodSubcategory?: FoodSubcategory[];
 }
+
+export const foodSubcategories: { id: FoodSubcategory | 'all'; label: string; icon: string }[] = [
+  { id: 'all', label: 'All Food', icon: 'UtensilsCrossed' },
+  { id: 'breakfast', label: 'Breakfast + Coffee', icon: 'Coffee' },
+  { id: 'lunch', label: 'Lunch + Dinner', icon: 'Sandwich' },
+  { id: 'datenight', label: 'Date Night', icon: 'Heart' },
+  { id: 'sweets', label: 'Sweet Treats', icon: 'IceCream' },
+];
 
 export const categories: { id: Category; label: string; icon: string }[] = [
   { id: 'all', label: 'All', icon: 'Compass' },
@@ -210,6 +220,7 @@ export const attractions: Attraction[] = [
     name: '17th Street Barbecue',
     category: 'food',
     region: 'west',
+    foodSubcategory: ['lunch'],
     description: 'Named "Best Barbecue in Illinois" by Food Network! World-famous BBQ from legendary pitmaster Mike Mills. Their award-winning ribs, pulled pork, and Magic Dust® are must-tries.',
     location: '32 N. 17th Street, Murphysboro, IL',
     distance: '20 min drive',
@@ -224,6 +235,7 @@ export const attractions: Attraction[] = [
     name: 'Giant City Lodge',
     category: 'food',
     region: 'west',
+    foodSubcategory: ['lunch', 'datenight'],
     description: 'A Southern Illinois institution since 1939! Famous for their legendary family-style fried chicken dinners served in a beautiful historic lodge setting.',
     location: '460 Giant City Lodge Rd, Makanda, IL',
     distance: '25 min drive',
@@ -238,6 +250,7 @@ export const attractions: Attraction[] = [
     name: 'Longbranch Cafe & Bakery',
     category: 'food',
     region: 'central',
+    foodSubcategory: ['breakfast', 'sweets'],
     description: 'Beloved local cafe featuring fresh-baked goods, hearty breakfasts, and a friendly small-town atmosphere. A Carbondale favorite for decades!',
     location: 'Carbondale, IL',
     distance: '25 min drive',
@@ -250,6 +263,7 @@ export const attractions: Attraction[] = [
     name: 'Quatro\'s Deep Pan Pizza',
     category: 'food',
     region: 'central',
+    foodSubcategory: ['lunch'],
     description: 'Carbondale\'s legendary deep-dish pizza joint. Thick, cheesy, and absolutely delicious - a local institution that\'s been satisfying hungry visitors for years.',
     location: 'Carbondale, IL',
     distance: '25 min drive',

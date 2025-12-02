@@ -2,19 +2,32 @@ import { useState, useMemo } from 'react';
 import { attractions, Category } from '@/data/attractions';
 import CategoryFilter from './CategoryFilter';
 import RegionFilter, { RegionOption } from './RegionFilter';
+import FoodSubcategoryFilter, { FoodSubcategoryOption } from './FoodSubcategoryFilter';
 import AttractionCard from './AttractionCard';
 
 const AttractionsGrid = () => {
   const [activeCategory, setActiveCategory] = useState<Category>('all');
   const [activeRegion, setActiveRegion] = useState<RegionOption>('all');
+  const [activeFoodSubcategory, setActiveFoodSubcategory] = useState<FoodSubcategoryOption>('all');
+
+  const handleCategoryChange = (category: Category) => {
+    setActiveCategory(category);
+    if (category !== 'food') {
+      setActiveFoodSubcategory('all');
+    }
+  };
 
   const filteredAttractions = useMemo(() => {
     return attractions.filter((a) => {
       const categoryMatch = activeCategory === 'all' || a.category === activeCategory;
       const regionMatch = activeRegion === 'all' || a.region === activeRegion;
-      return categoryMatch && regionMatch;
+      const foodSubcategoryMatch = 
+        activeCategory !== 'food' || 
+        activeFoodSubcategory === 'all' || 
+        (a.foodSubcategory && a.foodSubcategory.includes(activeFoodSubcategory));
+      return categoryMatch && regionMatch && foodSubcategoryMatch;
     });
-  }, [activeCategory, activeRegion]);
+  }, [activeCategory, activeRegion, activeFoodSubcategory]);
 
   return (
     <section className="bg-background py-12 sm:py-16">
@@ -34,9 +47,19 @@ const AttractionsGrid = () => {
         <div className="mb-4 sm:mb-6">
           <CategoryFilter
             activeCategory={activeCategory}
-            onCategoryChange={setActiveCategory}
+            onCategoryChange={handleCategoryChange}
           />
         </div>
+
+        {/* Food Subcategory Filter - only shown when Food + Beverage is selected */}
+        {activeCategory === 'food' && (
+          <div className="mb-4 sm:mb-6">
+            <FoodSubcategoryFilter
+              activeSubcategory={activeFoodSubcategory}
+              onSubcategoryChange={setActiveFoodSubcategory}
+            />
+          </div>
+        )}
 
         {/* Region Filter */}
         <div className="mb-8 sm:mb-10">
