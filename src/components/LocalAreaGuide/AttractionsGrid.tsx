@@ -1,15 +1,20 @@
 import { useState, useMemo } from 'react';
 import { attractions, Category } from '@/data/attractions';
 import CategoryFilter from './CategoryFilter';
+import RegionFilter, { RegionOption } from './RegionFilter';
 import AttractionCard from './AttractionCard';
 
 const AttractionsGrid = () => {
   const [activeCategory, setActiveCategory] = useState<Category>('all');
+  const [activeRegion, setActiveRegion] = useState<RegionOption>('all');
 
   const filteredAttractions = useMemo(() => {
-    if (activeCategory === 'all') return attractions;
-    return attractions.filter((a) => a.category === activeCategory);
-  }, [activeCategory]);
+    return attractions.filter((a) => {
+      const categoryMatch = activeCategory === 'all' || a.category === activeCategory;
+      const regionMatch = activeRegion === 'all' || a.region === activeRegion;
+      return categoryMatch && regionMatch;
+    });
+  }, [activeCategory, activeRegion]);
 
   return (
     <section className="bg-background py-12 sm:py-16">
@@ -26,10 +31,18 @@ const AttractionsGrid = () => {
         </div>
 
         {/* Category Filter */}
-        <div className="mb-8 sm:mb-10">
+        <div className="mb-4 sm:mb-6">
           <CategoryFilter
             activeCategory={activeCategory}
             onCategoryChange={setActiveCategory}
+          />
+        </div>
+
+        {/* Region Filter */}
+        <div className="mb-8 sm:mb-10">
+          <RegionFilter
+            activeRegion={activeRegion}
+            onRegionChange={setActiveRegion}
           />
         </div>
 
@@ -37,6 +50,7 @@ const AttractionsGrid = () => {
         <p className="mb-6 text-center text-sm text-muted-foreground">
           Showing {filteredAttractions.length} {filteredAttractions.length === 1 ? 'place' : 'places'}
           {activeCategory !== 'all' && ' in this category'}
+          {activeRegion !== 'all' && ` • ${activeRegion.charAt(0).toUpperCase() + activeRegion.slice(1)} region`}
         </p>
 
         {/* Attractions Grid */}
