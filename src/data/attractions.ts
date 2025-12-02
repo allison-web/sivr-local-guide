@@ -224,7 +224,7 @@ export const attractions: Attraction[] = [
     description: 'Don\'t let a little wait discourage you—great things are worth it! Known for their seasonally curated menu, every dish is a feast for the eyes and palate. Cash only, so stop by the ATM!',
     location: 'Cobden, IL',
     distance: '30 min drive',
-    image: 'https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=800&q=80',
+    image: '/images/attractions/iron-whisk.jpg',
     highlights: ['Seasonal Menu', 'Epic Flavors', 'Outdoor Seating'],
   },
   {
@@ -236,7 +236,7 @@ export const attractions: Attraction[] = [
     description: 'Through delicious crepes, refreshing tea and unique atmosphere, Blend has made a name for itself as a Carbondale favorite. Perfect for a quick lunch or long study session.',
     location: 'Carbondale, IL',
     distance: '25 min drive',
-    image: 'https://images.unsplash.com/photo-1519676867240-f03562e64548?w=800&q=80',
+    image: '/images/attractions/blend-tea.jpg',
     highlights: ['Sweet & Savory Crepes', 'Custom Drinks', 'Near SIU Campus'],
   },
   {
@@ -260,7 +260,7 @@ export const attractions: Attraction[] = [
     description: 'With a local cult following and located steps from SIU, Harbaugh\'s is Carbondale in breakfast form. Open everyday until 2pm with mimosas, coffee and food options for all.',
     location: 'Carbondale, IL',
     distance: '25 min drive',
-    image: 'https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=800&q=80',
+    image: '/images/attractions/harbaughs-cafe.jpg',
     highlights: ['Local Cult Following', 'Mimosas', 'Cozy Atmosphere'],
   },
   {
@@ -272,7 +272,7 @@ export const attractions: Attraction[] = [
     description: 'This vegetarian restaurant is a mainstay of downtown Carbondale. They make virtually everything by hand using organic and locally grown products. Great for date night too!',
     location: 'Carbondale, IL',
     distance: '25 min drive',
-    image: 'https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=800&q=80',
+    image: '/images/attractions/longbranch-cafe.jpg',
     highlights: ['Vegetarian', 'Fresh Baked Goods', 'Large Outdoor Patio'],
     phone: '(618) 529-4777',
   },
@@ -297,7 +297,7 @@ export const attractions: Attraction[] = [
     description: 'Three words: biscuits and gravy. Locals will throw down about who has the best B&G in Carbondale but Mary Lou\'s is definitely a front runner. Great stop after a long night.',
     location: 'Carbondale, IL',
     distance: '25 min drive',
-    image: 'https://images.unsplash.com/photo-1533089860892-a7c6f0a88666?w=800&q=80',
+    image: '/images/attractions/mary-lous-grill.jpg',
     highlights: ['Famous Biscuits & Gravy', 'Counter Seating', 'Classic Diner'],
   },
   {
@@ -385,7 +385,7 @@ export const attractions: Attraction[] = [
     description: 'This authentic Mexican restaurant is a Southern Illinois gem! Their tamales are the best. Period.',
     location: 'Cobden, IL',
     distance: '30 min drive',
-    image: 'https://images.unsplash.com/photo-1565299585323-38d6b0865b47?w=800&q=80',
+    image: '/images/attractions/taqueria-pequena.jpg',
     highlights: ['Best Tamales', 'Authentic Mexican', 'Local Gem'],
   },
   {
@@ -469,7 +469,7 @@ export const attractions: Attraction[] = [
     description: 'If you haven\'t written your name on the wall here, don\'t miss the opportunity! Phenomenal pizza, kitschy vibe, excellent salad bar. Wave to the mannequins in the tower!',
     location: 'Carbondale, IL',
     distance: '25 min drive',
-    image: 'https://images.unsplash.com/photo-1513104890138-7c749659a591?w=800&q=80',
+    image: '/images/attractions/italian-village.jpg',
     highlights: ['Write on the Wall', 'Great Pizza', 'Outdoor Seating'],
   },
   {
@@ -580,7 +580,7 @@ export const attractions: Attraction[] = [
     description: 'On a cobblestone street on the historic town square, this casual neighborhood restaurant features an eclectic atmosphere and diverse menu that changes daily.',
     location: 'Carbondale, IL',
     distance: '25 min drive',
-    image: 'https://images.unsplash.com/photo-1550966871-3ed3cdb5ed0c?w=800&q=80',
+    image: '/images/attractions/global-gourmet.jpg',
     highlights: ['Daily Menu Changes', 'Ethnic Inspired', 'Relaxing Patio'],
   },
   {
@@ -604,7 +604,7 @@ export const attractions: Attraction[] = [
     description: 'Steakhouse fare with extensive wine and whiskey list. Manicured patio makes this a great spot for an outdoor date night on a warm evening.',
     location: 'Carbondale, IL',
     distance: '25 min drive',
-    image: 'https://images.unsplash.com/photo-1544025162-d76694265947?w=800&q=80',
+    image: '/images/attractions/flame-grill.jpg',
     highlights: ['Wine & Whiskey', 'Manicured Patio', 'Upscale Ambiance'],
   },
   {
