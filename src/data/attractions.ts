@@ -142,6 +142,7 @@ export const attractions: Attraction[] = [
     distance: '10 min drive',
     image: '/images/attractions/lake-egypt-map.png',
     highlights: ['Lake Maps', 'Boating Rules', 'Safety Guidelines'],
+    website: 'https://www.sipower.org/wp-content/uploads/2019/08/SIPC_Lakerules.pdf',
   },
   {
     id: 'lake-time-pontoons',
