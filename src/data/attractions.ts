@@ -291,7 +291,7 @@ export const attractions: Attraction[] = [
     description: 'A cozy tasting room and deck overlooking a lake makes the perfect place for your wine experience. Seasonal selections include wine slushies, apple cider sangria, and hot spiced wine. Picnic baskets welcome!',
     location: 'Carbondale, IL',
     distance: '25 min drive',
-    image: '/images/attractions/kite-hill-vineyards.png',
+    image: '/images/attractions/kite-hill-vineyards.jpg',
     highlights: ['Lake Views', 'Wine Slushies', 'Picnic Friendly', 'Seasonal Specials'],
     website: 'https://kitehillvineyards.com/',
   },
