@@ -304,7 +304,7 @@ export const attractions: Attraction[] = [
     description: 'Three words: biscuits and gravy. Locals will throw down about who has the best B&G in Carbondale but Mary Lou\'s is definitely a front runner. Great stop after a long night.',
     location: 'Carbondale, IL',
     distance: '25 min drive',
-    image: '/images/attractions/mary-lous-grill.jpg',
+    image: '/images/attractions/mary-lous-grill.png',
     highlights: ['Famous Biscuits & Gravy', 'Counter Seating', 'Classic Diner'],
     phone: '(618) 457-5084',
   },
