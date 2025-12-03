@@ -460,7 +460,7 @@ export const attractions: Attraction[] = [
     description: 'Home of the famous garlic dressing—it\'s worth having bad breath! Walking distance to downtown Marion square. Fun fact: Started as a Tamale cart decades ago!',
     location: 'Marion, IL',
     distance: '15 min drive',
-    image: 'https://images.unsplash.com/photo-1498579150354-977475b7ea0b?w=800&q=80',
+    image: '/images/attractions/bennies.png',
     highlights: ['Famous Garlic Dressing', 'Italian Classics', 'Historic Tamales'],
     website: 'https://benniesitalianfoods.com/',
     phone: '(618) 997-6736',
