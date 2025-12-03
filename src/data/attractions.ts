@@ -180,7 +180,7 @@ export const attractions: Attraction[] = [
     description: 'Enjoy swimming in the clean, clear waters of Lake of Egypt. Several areas offer great swimming spots with beautiful scenery and peaceful atmosphere.',
     location: 'Lake of Egypt',
     distance: '10 min drive',
-    image: 'https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=800&q=80',
+    image: '/images/attractions/lake-egypt-swimming.png',
     highlights: ['Clear Water', 'Family Friendly', 'Scenic Views'],
   },
 
