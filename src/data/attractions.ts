@@ -166,7 +166,7 @@ export const attractions: Attraction[] = [
     description: 'Daily, weekend or weekly pontoon rentals at Lake of Egypt. Jamie and Dawn are the best - plus they deliver the boat and pick it up right at your dock!',
     location: 'Lake of Egypt',
     distance: '10 min drive',
-    image: 'https://images.unsplash.com/photo-1566073771259-6a8506099945?w=800&q=80',
+    image: '/images/attractions/wiener-rides.jpg',
     highlights: ['Pontoon Rentals', 'Dock Delivery', 'Weekly Options'],
     phone: '(618) 922-0649',
   },
