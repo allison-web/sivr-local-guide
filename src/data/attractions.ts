@@ -343,17 +343,6 @@ export const attractions: Attraction[] = [
     highlights: ['Brandy', 'Rum', 'Whiskey', 'Spirit Store'],
   },
   {
-    id: 'brews-brothers',
-    name: 'Brews Brothers Tap',
-    category: 'wineries',
-    region: 'west',
-    description: 'Southern Illinois\' home for local craft beer, wine, and distilled spirits. Located on a brick street in historic downtown Murphysboro with live music highlights!',
-    location: 'Murphysboro, IL',
-    distance: '20 min drive',
-    image: 'https://images.unsplash.com/photo-1559526324-593bc073d938?w=800&q=80',
-    highlights: ['Local Craft Beer', 'Wine', 'Spirits', 'Live Music'],
-  },
-  {
     id: 'st-nicholas',
     name: 'St. Nicholas Brewing Co.',
     category: 'wineries',
