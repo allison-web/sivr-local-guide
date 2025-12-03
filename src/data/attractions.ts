@@ -394,6 +394,18 @@ export const attractions: Attraction[] = [
     highlights: ['Small Batch', 'Brewery Tours', 'Craft Beer', 'Weekend Tours'],
     website: 'https://bigmuddybrewing.com/',
   },
+  {
+    id: 'shawnee-wine-trail-shuttle',
+    name: 'Shawnee Wine Trail Shuttle',
+    category: 'wineries',
+    region: 'central',
+    winerySubcategory: 'shuttle',
+    description: 'Sit back and enjoy the ride while visiting wineries along the beautiful Shawnee Wine Trail. Professional shuttle service offers safe, convenient transportation between wineries so everyone in your group can taste and enjoy.',
+    location: 'Southern Illinois',
+    distance: 'Varies',
+    image: '/images/attractions/shawnee-wine-trail.png',
+    highlights: ['Safe Transportation', 'Multiple Winery Stops', 'Group Friendly', 'Customizable Tours'],
+  },
 
   // FOOD + BEVERAGE - BREAKFAST + COFFEE
   {
