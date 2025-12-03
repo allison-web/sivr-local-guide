@@ -754,7 +754,7 @@ export const attractions: Attraction[] = [
     description: 'Ice cream shop, meat market, cottage food store, and gift store owned by Higginson\'s Farms. They also own Riverside Lodge.',
     location: 'Elizabethtown, IL',
     distance: '50 min drive',
-    image: 'https://images.unsplash.com/photo-1501443762994-82bd5dace89a?w=800&q=80',
+    image: '/images/attractions/riverside-mercantile.png',
     highlights: ['Ice Cream', 'Local Goods', 'Gift Store'],
   },
   {
