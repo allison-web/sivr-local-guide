@@ -279,7 +279,7 @@ export const attractions: Attraction[] = [
     description: 'Delicious wine that celebrates the Shawnee Hills. All wines are made from grapes grown in the "Shawnee Hills" American Viticulture Area (AVA).',
     location: 'Cobden, IL',
     distance: '30 min drive',
-    image: '/images/attractions/wichmann-vineyard.png',
+    image: '/images/attractions/wichmann-vineyard.jpg',
     highlights: ['Shawnee Hills AVA', 'Local Grapes', 'Wine Tastings'],
     website: 'https://wichmannvineyard.com/',
   },
