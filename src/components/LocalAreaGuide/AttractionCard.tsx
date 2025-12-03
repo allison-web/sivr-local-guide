@@ -45,7 +45,7 @@ const AttractionCard = ({ attraction, index }: AttractionCardProps) => {
         
         {/* Category Badge */}
         <span className="absolute left-3 top-3 rounded-full bg-card/90 px-2.5 py-1 text-xs font-medium text-foreground backdrop-blur-sm">
-          {categoryLabels[attraction.category] || attraction.category}
+          {categoryLabels[Array.isArray(attraction.category) ? attraction.category[0] : attraction.category] || (Array.isArray(attraction.category) ? attraction.category[0] : attraction.category)}
         </span>
         
         {/* Region Badge */}

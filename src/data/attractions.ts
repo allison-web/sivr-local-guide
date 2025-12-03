@@ -7,7 +7,7 @@ export type LakeSubcategory = 'about' | 'rentals' | 'marinas';
 export interface Attraction {
   id: string;
   name: string;
-  category: Category;
+  category: Category | Category[];
   region: Region;
   description: string;
   location: string;
@@ -199,9 +199,10 @@ export const attractions: Attraction[] = [
   {
     id: 'marion-koa',
     name: 'Marion KOA Campground on Lake of Egypt',
-    category: 'lake',
+    category: ['lake', 'food'],
     region: 'central',
     lakeSubcategory: ['marinas'],
+    foodSubcategory: ['lunch', 'sweets'],
     description: 'At the south end of the lake, enjoy the water park (2 hour time slots), boozy adult shakes from the Watering Hole, gourmet pizza, burgers, ice cream and more!',
     location: 'South End of Lake',
     distance: '15 min drive',

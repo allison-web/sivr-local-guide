@@ -29,7 +29,8 @@ const AttractionsGrid = () => {
 
   const filteredAttractions = useMemo(() => {
     return attractions.filter((a) => {
-      const categoryMatch = activeCategory === 'all' || a.category === activeCategory;
+      const categoryMatch = activeCategory === 'all' || 
+        (Array.isArray(a.category) ? a.category.includes(activeCategory) : a.category === activeCategory);
       const regionMatch = activeRegion === 'all' || a.region === activeRegion;
       const foodSubcategoryMatch = 
         activeCategory !== 'food' || 
