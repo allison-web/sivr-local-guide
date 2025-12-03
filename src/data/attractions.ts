@@ -785,7 +785,7 @@ export const attractions: Attraction[] = [
     id: 'freight-house',
     name: 'Freight House',
     category: 'food',
-    region: 'west',
+    region: 'east',
     foodSubcategory: ['datenight', 'lunch'],
     description: 'While we try to stick to recommendations on this side of the river, we can\'t help but recommend Chef Sara Bradley\'s inspiring restaurant. She was the runner-up on Top Chef Season 16 and is currently competing on Top Chef World All-Stars Season 20. Freight House is Paducah\'s first and only farm-to-table restaurant, serving up traditional Southern flavors paired with locally sourced meats and garden fresh fare. Stop by and enjoy food the way it was intended to be served...in season.',
     location: 'Paducah, KY',
