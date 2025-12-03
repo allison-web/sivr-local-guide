@@ -3,17 +3,22 @@ import { attractions, Category } from '@/data/attractions';
 import CategoryFilter from './CategoryFilter';
 import RegionFilter, { RegionOption } from './RegionFilter';
 import FoodSubcategoryFilter, { FoodSubcategoryOption } from './FoodSubcategoryFilter';
+import WinerySubcategoryFilter, { WinerySubcategoryOption } from './WinerySubcategoryFilter';
 import AttractionCard from './AttractionCard';
 
 const AttractionsGrid = () => {
   const [activeCategory, setActiveCategory] = useState<Category>('all');
   const [activeRegion, setActiveRegion] = useState<RegionOption>('all');
   const [activeFoodSubcategory, setActiveFoodSubcategory] = useState<FoodSubcategoryOption>('all');
+  const [activeWinerySubcategory, setActiveWinerySubcategory] = useState<WinerySubcategoryOption>('all');
 
   const handleCategoryChange = (category: Category) => {
     setActiveCategory(category);
     if (category !== 'food') {
       setActiveFoodSubcategory('all');
+    }
+    if (category !== 'wineries') {
+      setActiveWinerySubcategory('all');
     }
   };
 
@@ -25,9 +30,13 @@ const AttractionsGrid = () => {
         activeCategory !== 'food' || 
         activeFoodSubcategory === 'all' || 
         (a.foodSubcategory && a.foodSubcategory.includes(activeFoodSubcategory));
-      return categoryMatch && regionMatch && foodSubcategoryMatch;
+      const winerySubcategoryMatch =
+        activeCategory !== 'wineries' ||
+        activeWinerySubcategory === 'all' ||
+        a.winerySubcategory === activeWinerySubcategory;
+      return categoryMatch && regionMatch && foodSubcategoryMatch && winerySubcategoryMatch;
     });
-  }, [activeCategory, activeRegion, activeFoodSubcategory]);
+  }, [activeCategory, activeRegion, activeFoodSubcategory, activeWinerySubcategory]);
 
   return (
     <section className="bg-background py-12 sm:py-16">
@@ -57,6 +66,16 @@ const AttractionsGrid = () => {
             <FoodSubcategoryFilter
               activeSubcategory={activeFoodSubcategory}
               onSubcategoryChange={setActiveFoodSubcategory}
+            />
+          </div>
+        )}
+
+        {/* Winery Subcategory Filter - only shown when Wineries & Adult Beverages is selected */}
+        {activeCategory === 'wineries' && (
+          <div className="mb-4 sm:mb-6">
+            <WinerySubcategoryFilter
+              activeSubcategory={activeWinerySubcategory}
+              onSubcategoryChange={setActiveWinerySubcategory}
             />
           </div>
         )}
