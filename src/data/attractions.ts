@@ -236,18 +236,6 @@ export const attractions: Attraction[] = [
     website: 'https://honkerhillwinery.com/',
   },
   {
-    id: 'peachbarn',
-    name: 'Peachbarn Winery & Cafe',
-    category: 'wineries',
-    region: 'west',
-    description: 'Award-winning wines made from estate grown grapes with a seasonal restaurant. Located in a restored 3-story barn with seating inside or outdoors overlooking the pond and vineyard.',
-    location: 'Alto Pass, IL',
-    distance: '30 min drive',
-    image: '/images/attractions/peachbarn-winery.png',
-    highlights: ['Estate Wines', 'Restored Barn', 'Pond Views', 'Seasonal Restaurant'],
-    website: 'https://thepeachbarn.com/',
-  },
-  {
     id: 'pomona',
     name: 'Pomona Winery',
     category: 'wineries',
