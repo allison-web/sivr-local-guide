@@ -223,9 +223,9 @@ export const attractions: Attraction[] = [
   {
     id: 'cross-eyed-bear',
     name: 'The Cross-Eyed Bear at Mack\'s Marina',
-    category: 'lake',
+    category: 'food',
     region: 'central',
-    lakeSubcategory: 'marinas',
+    foodSubcategory: ['lunch'],
     description: 'Thursdays feature all-you-can-eat crab legs! Full service bar and gastropub menu with bands and concerts throughout the summer. Great burgers and good food.',
     location: 'Mack\'s Marina',
     distance: '10 min drive',
