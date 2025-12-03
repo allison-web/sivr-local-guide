@@ -220,7 +220,7 @@ export const attractions: Attraction[] = [
     description: 'A beautiful vineyard offering tastings and scenic views along the Shawnee Hills Wine Trail.',
     location: 'Alto Pass, IL',
     distance: '30 min drive',
-    image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&q=80',
+    image: '/images/attractions/clad-cordon-vineyard.png',
     highlights: ['Wine Tastings', 'Scenic Views', 'Wine Trail Stop'],
   },
   {
