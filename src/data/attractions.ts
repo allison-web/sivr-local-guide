@@ -592,7 +592,7 @@ export const attractions: Attraction[] = [
     description: 'On a cobblestone street on the historic town square, this casual neighborhood restaurant features an eclectic atmosphere and diverse menu that changes daily.',
     location: 'Carbondale, IL',
     distance: '25 min drive',
-    image: '/images/attractions/global-gourmet.jpg',
+    image: '/images/attractions/global-gourmet.png',
     highlights: ['Daily Menu Changes', 'Ethnic Inspired', 'Relaxing Patio'],
   },
   {
