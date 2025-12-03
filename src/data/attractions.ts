@@ -267,7 +267,7 @@ export const attractions: Attraction[] = [
     description: 'Not only a winery, but a destination! Southern Illinois\' breathtaking scenery forms the backdrop for local in-season farm to fork cuisine, pleasurable pastimes, and world-class entertainment. Four venues to experience with unmistakable romance and fun family activities.',
     location: 'Carterville, IL',
     distance: '15 min drive',
-    image: '/images/attractions/walkers-bluff.png',
+    image: '/images/attractions/walkers-bluff.jpg',
     highlights: ['Four Venues', 'Farm to Fork', 'Entertainment', 'Family Activities'],
     website: 'https://walkersbluff.com/',
   },
