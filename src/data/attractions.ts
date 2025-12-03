@@ -307,17 +307,6 @@ export const attractions: Attraction[] = [
     highlights: ['Free Tastings', 'Local Art', 'Pope County\'s First'],
     website: 'https://hogghollowwinery.com/',
   },
-  {
-    id: 'hickory-ridge',
-    name: 'Hickory Ridge Vineyard and Winery',
-    category: 'wineries',
-    region: 'west',
-    description: 'A scenic vineyard and winery along the Shawnee Hills Wine Trail offering quality wines and beautiful views.',
-    location: 'Pomona, IL',
-    distance: '35 min drive',
-    image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&q=80',
-    highlights: ['Wine Trail Stop', 'Scenic Views', 'Wine Tastings'],
-  },
 
   // BREWERIES + DISTILLERIES
   {
