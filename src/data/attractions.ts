@@ -618,7 +618,7 @@ export const attractions: Attraction[] = [
     description: 'Steakhouse fare with extensive wine and whiskey list. Manicured patio makes this a great spot for an outdoor date night on a warm evening.',
     location: 'Carbondale, IL',
     distance: '25 min drive',
-    image: '/images/attractions/flame-grill.jpg',
+    image: '/images/attractions/flame-grill.png',
     highlights: ['Wine & Whiskey', 'Manicured Patio', 'Upscale Ambiance'],
     website: 'https://flamecarbondale.com/',
     phone: '(618) 351-8242',
