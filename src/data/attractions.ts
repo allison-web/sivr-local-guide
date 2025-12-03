@@ -416,7 +416,7 @@ export const attractions: Attraction[] = [
     description: 'Premier transportation services for over 20 years. Embark on excursions to wineries, breweries, local shops, weddings and more with knowledgeable local drivers offering a homegrown experience.',
     location: 'Southern Illinois',
     distance: 'Varies',
-    image: '/images/attractions/shawnee-wine-trail.png',
+    image: '/images/attractions/wrightway-transportation.png',
     highlights: ['20+ Years Experience', 'Local Drivers', 'Wineries & Breweries', 'Weddings & Events'],
     website: 'http://www.wrightwaytransportation.com/',
   },
