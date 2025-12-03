@@ -550,7 +550,7 @@ export const attractions: Attraction[] = [
     description: 'Family owned for over 75 years! Great cheeseburgers and fries at an affordable price. A famous "Polar Whip" hamburger costs just 80 cents!',
     location: 'Herrin, IL',
     distance: '20 min drive',
-    image: 'https://images.unsplash.com/photo-1550547660-d9450f859349?w=800&q=80',
+    image: '/images/attractions/neslers-polar-whip.png',
     highlights: ['75+ Years Family Owned', '80 Cent Burgers', 'Affordable'],
     phone: '(618) 988-9210',
   },
