@@ -195,19 +195,6 @@ export const attractions: Attraction[] = [
     image: '/images/attractions/macks-marina.png',
     highlights: ['Paddle Board Rentals', 'Online Booking'],
   },
-  {
-    id: 'jm-jet-ski',
-    name: 'J & M Jet Ski Rentals (Paradise Watersports)',
-    category: 'lake',
-    region: 'central',
-    lakeSubcategory: 'rentals',
-    description: 'A new jet ski rental service for Lake of Egypt. Call to book your adventure on the water!',
-    location: 'Lake of Egypt',
-    distance: '10 min drive',
-    image: 'https://images.unsplash.com/photo-1530870110042-98b2cb110834?w=800&q=80',
-    highlights: ['Jet Ski Rentals', 'New Service'],
-    phone: '(618) 521-0845',
-  },
   // MARINAS
   {
     id: 'marion-koa',
