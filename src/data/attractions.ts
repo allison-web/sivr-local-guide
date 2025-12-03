@@ -137,7 +137,7 @@ export const attractions: Attraction[] = [
     category: 'lake',
     region: 'central',
     lakeSubcategory: 'about',
-    description: 'Find detailed maps and important rules for Lake of Egypt. Learn about speed limits, no-wake zones, fishing regulations, and designated areas to ensure a safe and enjoyable experience.',
+    description: 'Skiing, tubing and jet skiing are ONLY allowed in the designated ski area on the north end of the lake by the dam. When in doubt, please ask us about rules you are not sure about!',
     location: 'Lake of Egypt',
     distance: '10 min drive',
     image: '/images/attractions/lake-egypt-map.png',
