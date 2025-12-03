@@ -132,6 +132,18 @@ export const attractions: Attraction[] = [
     highlights: ['Bass Fishing', 'Crappie & Catfish', 'Clear Water'],
   },
   {
+    id: 'lake-egypt-map-rules',
+    name: 'Lake of Egypt Map and Rules of the Lake',
+    category: 'lake',
+    region: 'central',
+    lakeSubcategory: 'about',
+    description: 'Find detailed maps and important rules for Lake of Egypt. Learn about speed limits, no-wake zones, fishing regulations, and designated areas to ensure a safe and enjoyable experience.',
+    location: 'Lake of Egypt',
+    distance: '10 min drive',
+    image: 'https://images.unsplash.com/photo-1524661135-423995f22d0b?w=800&q=80',
+    highlights: ['Lake Maps', 'Boating Rules', 'Safety Guidelines'],
+  },
+  {
     id: 'lake-time-pontoons',
     name: 'Lake Time Pontoon Rentals',
     category: 'lake',
