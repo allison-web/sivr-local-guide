@@ -657,7 +657,7 @@ export const attractions: Attraction[] = [
     description: 'Fine dining in a Victorian house. Prime steaks, fresh seafood, lamb, duck, and quail. Reservations required.',
     location: 'Herrin, IL',
     distance: '20 min drive',
-    image: 'https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=800&q=80',
+    image: '/images/attractions/marys-restaurant.png',
     highlights: ['Victorian House', 'Prime Steaks', 'Fine Dining'],
     website: 'http://www.marysfinedining.com/',
     phone: '(618) 942-2742',
