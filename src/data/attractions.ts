@@ -782,18 +782,6 @@ export const attractions: Attraction[] = [
     highlights: ['Specialty Coffee', 'Breakfast All Day', 'Big Foot Selfie'],
   },
   {
-    id: '4s-dairy-barn',
-    name: '4 S Dairy Barn',
-    category: 'food',
-    region: 'central',
-    foodSubcategory: ['sweets'],
-    description: 'Owned by siblings still in college using dairy from midwest family farms. Soft serve, frozen yogurt, shakes, slushies, concretes and more!',
-    location: 'Marion, IL',
-    distance: '15 min drive',
-    image: 'https://images.unsplash.com/photo-1570197788417-0e82375c9371?w=800&q=80',
-    highlights: ['Family Farm Dairy', 'Soft Serve', 'Online Ordering'],
-  },
-  {
     id: 'golconda-dari-barr',
     name: 'Golconda Dari-Barr',
     category: 'food',
