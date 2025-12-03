@@ -1,6 +1,7 @@
 export type Category = 'all' | 'food' | 'lake' | 'outdoors' | 'rainy' | 'wineries' | 'thingstodo' | 'essentials';
 export type Region = 'west' | 'central' | 'east';
 export type FoodSubcategory = 'breakfast' | 'lunch' | 'datenight' | 'sweets';
+export type WinerySubcategory = 'winery' | 'brewery' | 'distillery' | 'shuttle';
 
 export interface Attraction {
   id: string;
@@ -16,6 +17,7 @@ export interface Attraction {
   phone?: string;
   hours?: string;
   foodSubcategory?: FoodSubcategory[];
+  winerySubcategory?: WinerySubcategory;
 }
 
 export const foodSubcategories: { id: FoodSubcategory | 'all'; label: string; icon: string }[] = [
@@ -24,6 +26,14 @@ export const foodSubcategories: { id: FoodSubcategory | 'all'; label: string; ic
   { id: 'lunch', label: 'Lunch + Dinner', icon: 'Sandwich' },
   { id: 'datenight', label: 'Date Night', icon: 'Heart' },
   { id: 'sweets', label: 'Sweet Treats', icon: 'IceCream' },
+];
+
+export const winerySubcategories: { id: WinerySubcategory | 'all'; label: string; icon: string }[] = [
+  { id: 'all', label: 'All', icon: 'Wine' },
+  { id: 'winery', label: 'Wineries', icon: 'Grape' },
+  { id: 'brewery', label: 'Breweries', icon: 'Beer' },
+  { id: 'distillery', label: 'Distilleries', icon: 'GlassWater' },
+  { id: 'shuttle', label: 'Shuttle Services', icon: 'Bus' },
 ];
 
 export const categories: { id: Category; label: string; icon: string }[] = [
@@ -154,6 +164,7 @@ export const attractions: Attraction[] = [
     name: 'Blue Sky Vineyard',
     category: 'wineries',
     region: 'west',
+    winerySubcategory: 'winery',
     description: 'The "Romance of Italy in Southern Illinois!" Award-winning wines, Tuscan-inspired architecture, and stunning views from the outdoor patio.',
     location: 'Makanda, IL',
     distance: '25 min drive',
@@ -167,6 +178,7 @@ export const attractions: Attraction[] = [
     name: 'StarView Vineyards',
     category: 'wineries',
     region: 'west',
+    winerySubcategory: 'winery',
     description: 'A family-owned winery with 18 award-winning wines crafted on-site. Enjoy scenic views of the Cobden hills and a warm, inviting atmosphere perfect for relaxing with friends.',
     location: 'Cobden, IL',
     distance: '30 min drive',
@@ -180,6 +192,7 @@ export const attractions: Attraction[] = [
     name: 'Alto Vineyards',
     category: 'wineries',
     region: 'west',
+    winerySubcategory: 'winery',
     description: 'The oldest and largest vineyard in Southern Illinois! The Renzaglia Family welcomes you to taste some of the finest wines produced in the United States.',
     location: 'Alto Pass, IL',
     distance: '30 min drive',
@@ -193,6 +206,7 @@ export const attractions: Attraction[] = [
     name: 'Owl Creek Vineyard',
     category: 'wineries',
     region: 'west',
+    winerySubcategory: 'winery',
     description: 'A charming boutique winery offering handcrafted wines in a relaxed, rustic setting. Known for their friendly atmosphere and quality selections.',
     location: 'Cobden, IL',
     distance: '30 min drive',
@@ -205,6 +219,7 @@ export const attractions: Attraction[] = [
     name: 'Feather Hills Vineyard & Winery',
     category: 'wineries',
     region: 'west',
+    winerySubcategory: 'winery',
     description: 'The vineyard began its roots in 1988 when their first vines were planted. Located on one of Southern Illinois\' highest ridge tops, deep in the heart of the Shawnee Hills A.V.A. Come out for live music every Saturday and Sunday. Picnic baskets welcome, pet friendly with yard games for the family.',
     location: 'Alto Pass, IL',
     distance: '30 min drive',
@@ -217,6 +232,7 @@ export const attractions: Attraction[] = [
     name: 'Clad & Cordon Vineyard',
     category: 'wineries',
     region: 'west',
+    winerySubcategory: 'winery',
     description: 'A beautiful vineyard offering tastings and scenic views along the Shawnee Hills Wine Trail.',
     location: 'Creal Springs, IL',
     distance: '30 min drive',
@@ -228,6 +244,7 @@ export const attractions: Attraction[] = [
     name: 'Honker Hill Winery',
     category: 'wineries',
     region: 'west',
+    winerySubcategory: 'winery',
     description: 'Established in 2004, this family-friendly winery is home to some of the best musical acts in the area! They routinely book established Nashville artists and offer lauded wine slushies—perfect for cooling off in hot summer months.',
     location: 'Carbondale, IL',
     distance: '25 min drive',
@@ -240,6 +257,7 @@ export const attractions: Attraction[] = [
     name: 'Pomona Winery',
     category: 'wineries',
     region: 'west',
+    winerySubcategory: 'winery',
     description: 'Specializes in wines made from locally grown fruits other than grapes. Enjoy a beautiful drive through the Shawnee National Forest and savor the wooded setting from covered decks or garden picnic area. Try the fan-favorite Strawberry Dessert wine!',
     location: 'Pomona, IL',
     distance: '35 min drive',
@@ -252,6 +270,7 @@ export const attractions: Attraction[] = [
     name: 'Von Jakob Winery & Brewery',
     category: 'wineries',
     region: 'west',
+    winerySubcategory: 'winery',
     description: 'Located among the beautiful rolling hills of the Shawnee National Forest. Sample over 20 varieties of wine, hand-crafted beers, and award-winning hard apple cider. Full service restaurant Friday and Saturday evenings with live music every weekend.',
     location: 'Alto Pass, IL',
     distance: '30 min drive',
@@ -264,6 +283,7 @@ export const attractions: Attraction[] = [
     name: 'Walker\'s Bluff',
     category: 'wineries',
     region: 'west',
+    winerySubcategory: 'winery',
     description: 'Not only a winery, but a destination! Southern Illinois\' breathtaking scenery forms the backdrop for local in-season farm to fork cuisine, pleasurable pastimes, and world-class entertainment. Four venues to experience with unmistakable romance and fun family activities.',
     location: 'Carterville, IL',
     distance: '15 min drive',
@@ -276,6 +296,7 @@ export const attractions: Attraction[] = [
     name: 'Wichmann Vineyard',
     category: 'wineries',
     region: 'west',
+    winerySubcategory: 'winery',
     description: 'Delicious wine that celebrates the Shawnee Hills. All wines are made from grapes grown in the "Shawnee Hills" American Viticulture Area (AVA).',
     location: 'Cobden, IL',
     distance: '30 min drive',
@@ -288,6 +309,7 @@ export const attractions: Attraction[] = [
     name: 'Hogg Hollow Winery',
     category: 'wineries',
     region: 'east',
+    winerySubcategory: 'winery',
     description: 'Pope County\'s first winery, surrounded by the scenic hills of the Shawnee National Forest. View works by local artists and enjoy free wine tasting at this Golconda winery.',
     location: 'Golconda, IL',
     distance: '45 min drive',
@@ -302,6 +324,7 @@ export const attractions: Attraction[] = [
     name: 'Havisham Bourbon Bar',
     category: 'wineries',
     region: 'west',
+    winerySubcategory: 'distillery',
     description: 'One of the newest features in the heart of the wine trail—but no wine here! Signature bourbon drinks all around with a full bar for other preferences.',
     location: 'Alto Pass, IL',
     distance: '30 min drive',
@@ -313,6 +336,7 @@ export const attractions: Attraction[] = [
     name: 'Buckwater Brew Works and Whiskey House',
     category: 'wineries',
     region: 'central',
+    winerySubcategory: 'brewery',
     description: 'A family-friendly brew works and whiskey house serving pub style food. Offers a massive variety of ale and lager beers, over 300 whiskeys and scotches. Great atmosphere for date night or a night out with friends.',
     location: 'Carbondale, IL',
     distance: '15 min drive',
@@ -324,6 +348,7 @@ export const attractions: Attraction[] = [
     name: 'Katy Lynn Distillery',
     category: 'wineries',
     region: 'west',
+    winerySubcategory: 'distillery',
     description: 'Specializes in brandy, rum, and whiskey. Visit the pub, learn about the history, walk around the property and relax. Tasting room accommodates 50 people. Spirit store available.',
     location: 'Carbondale, IL',
     distance: '25 min drive',
@@ -335,6 +360,7 @@ export const attractions: Attraction[] = [
     name: 'St. Nicholas Brewing Co.',
     category: 'wineries',
     region: 'central',
+    winerySubcategory: 'brewery',
     description: 'A microbrewery and restaurant with three locations throughout Southern Illinois. All beer is brewed in house. Enjoy a drink at the Southern Illinois Airport location while sitting just off the runway. The Poutine is a favorite!',
     location: 'Various Locations',
     distance: '15-30 min drive',
@@ -347,6 +373,7 @@ export const attractions: Attraction[] = [
     name: 'Scratch Brewing Company',
     category: 'wineries',
     region: 'west',
+    winerySubcategory: 'brewery',
     description: 'A farmhouse brewery located five miles from the Shawnee National Forest. Named one of the top four breweries for foraged beer by Outside Magazine and one of the most beautiful places to drink beer in the world by All About Beer Magazine.',
     location: 'Ava, IL',
     distance: '35 min drive',
@@ -359,6 +386,7 @@ export const attractions: Attraction[] = [
     name: 'Big Muddy Brewing',
     category: 'wineries',
     region: 'west',
+    winerySubcategory: 'brewery',
     description: 'This micro-brewery quietly puts out small batches of craft beer for beer enthusiasts to enjoy. Stop in for a tour of the operation and stick around for a sampling. Tours every Saturday and Sunday.',
     location: 'Murphysboro, IL',
     distance: '20 min drive',
