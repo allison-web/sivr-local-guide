@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import { MapPin, Clock, ExternalLink, Phone, Navigation } from 'lucide-react';
 import { Attraction, Region } from '@/data/attractions';
 import { cn } from '@/lib/utils';
@@ -22,6 +23,8 @@ const regionLabels: Record<Region, string> = {
 };
 
 const AttractionCard = ({ attraction, index }: AttractionCardProps) => {
+  const [isExpanded, setIsExpanded] = useState(false);
+
   return (
     <article
       className={cn(
@@ -73,9 +76,20 @@ const AttractionCard = ({ attraction, index }: AttractionCardProps) => {
         </div>
 
         {/* Description */}
-        <p className="mt-3 line-clamp-3 text-sm leading-relaxed text-muted-foreground">
-          {attraction.description}
-        </p>
+        <div className="mt-3">
+          <p className={cn(
+            "text-sm leading-relaxed text-muted-foreground",
+            !isExpanded && "line-clamp-3"
+          )}>
+            {attraction.description}
+          </p>
+          <button
+            onClick={() => setIsExpanded(!isExpanded)}
+            className="mt-1 text-xs font-medium text-sivr-blue hover:text-sivr-copper transition-colors"
+          >
+            {isExpanded ? 'Read less' : 'Read more'}
+          </button>
+        </div>
 
         {/* Highlights */}
         <div className="mt-4 flex flex-wrap gap-1.5 sm:gap-2">
