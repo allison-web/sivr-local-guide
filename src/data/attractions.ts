@@ -766,7 +766,7 @@ export const attractions: Attraction[] = [
     description: 'Gifts, ice cream (shakes, slushies, floats, sundaes), and tourist info in a log cabin-style shop. Big Foot across the road for a photo op!',
     location: 'Herod, IL',
     distance: '35 min drive',
-    image: 'https://images.unsplash.com/photo-1570197788417-0e82375c9371?w=800&q=80',
+    image: '/images/attractions/garden-gods-outpost.png',
     highlights: ['Ice Cream', 'Gifts', 'Big Foot Photo Op'],
   },
   {
