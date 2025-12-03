@@ -350,7 +350,7 @@ export const attractions: Attraction[] = [
     description: 'A microbrewery and restaurant with three locations throughout Southern Illinois. All beer is brewed in house. Enjoy a drink at the Southern Illinois Airport location while sitting just off the runway. The Poutine is a favorite!',
     location: 'Various Locations',
     distance: '15-30 min drive',
-    image: 'https://images.unsplash.com/photo-1559526324-593bc073d938?w=800&q=80',
+    image: '/images/attractions/st-nicholas-brewing.png',
     highlights: ['House-Brewed Beer', 'Airport Location', 'Poutine', 'Three Locations'],
     website: 'https://stnicholasbrewing.com/',
   },
