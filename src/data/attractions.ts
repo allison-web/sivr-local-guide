@@ -577,7 +577,7 @@ export const attractions: Attraction[] = [
     description: 'A floating restaurant ON the Ohio River! Fresh-caught catfish in a true river-to-table experience. Double decker patio seating.',
     location: 'Elizabethtown, IL',
     distance: '50 min drive',
-    image: 'https://images.unsplash.com/photo-1514933651103-005eec06c04b?w=800&q=80',
+    image: '/images/attractions/etown-river.png',
     highlights: ['Floating Restaurant', 'Fresh Catfish', 'Ohio River Views'],
     phone: '(618) 287-2333',
   },
