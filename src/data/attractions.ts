@@ -434,7 +434,7 @@ export const attractions: Attraction[] = [
     description: 'A family-owned traditional Italian restaurant that does it right—food, atmosphere and service. Afternoon Buffet is a great deal if spending the day in Murphysboro.',
     location: 'Murphysboro, IL',
     distance: '20 min drive',
-    image: 'https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=800&q=80',
+    image: '/images/attractions/cummares.png',
     highlights: ['Traditional Italian', 'Family-Owned', 'Afternoon Buffet'],
   },
   {
