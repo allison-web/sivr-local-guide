@@ -221,6 +221,18 @@ export const attractions: Attraction[] = [
     highlights: ['Live Bands', 'Full Bar', 'Fuel Station', 'Food Trucks'],
   },
   {
+    id: 'macks-marina',
+    name: 'Mack\'s Marina',
+    category: 'lake',
+    region: 'central',
+    lakeSubcategory: 'marinas',
+    description: 'A popular marina on Lake of Egypt featuring The Cross-Eyed Bear gastropub, paddle board and pontoon rentals, and a great atmosphere for lake lovers.',
+    location: 'Lake of Egypt',
+    distance: '10 min drive',
+    image: '/images/attractions/macks-marina.png',
+    highlights: ['Full Marina', 'Gastropub', 'Boat Rentals'],
+  },
+  {
     id: 'cross-eyed-bear',
     name: 'The Cross-Eyed Bear at Mack\'s Marina',
     category: 'food',
