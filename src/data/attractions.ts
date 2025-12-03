@@ -408,7 +408,7 @@ export const attractions: Attraction[] = [
     description: 'Our favorite "rainy-day" place to take the kids! Full of billiards, bocce and other fun entertainment that makes you forget about being cooped up inside.',
     location: 'Marion, IL',
     distance: '15 min drive',
-    image: '/images/attractions/pookies.jpg',
+    image: '/images/attractions/pookies.png',
     highlights: ['Bocce Courts', 'Billiards', 'Family Friendly'],
     phone: '(618) 997-3690',
   },
