@@ -42,7 +42,7 @@ const AttractionsGrid = () => {
       const lakeSubcategoryMatch =
         activeCategory !== 'lake' ||
         activeLakeSubcategory === 'all' ||
-        a.lakeSubcategory === activeLakeSubcategory;
+        (a.lakeSubcategory && a.lakeSubcategory.includes(activeLakeSubcategory));
       return categoryMatch && regionMatch && foodSubcategoryMatch && winerySubcategoryMatch && lakeSubcategoryMatch;
     });
   }, [activeCategory, activeRegion, activeFoodSubcategory, activeWinerySubcategory, activeLakeSubcategory]);
