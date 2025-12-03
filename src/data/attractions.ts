@@ -218,7 +218,7 @@ export const attractions: Attraction[] = [
     description: 'Known for a friendly, local crowd and lively bands on weekends. Full bar with billiards, food trucks on weekends, and Bloody Mary Bar on Sundays! Our recommended place to fuel up and replenish the cooler.',
     location: 'Lake of Egypt',
     distance: '10 min drive',
-    image: 'https://images.unsplash.com/photo-1545558014-8692077e9b5c?w=800&q=80',
+    image: '/images/attractions/pyramid-acres-marina.jpg',
     highlights: ['Live Bands', 'Full Bar', 'Fuel Station', 'Food Trucks'],
   },
   {
