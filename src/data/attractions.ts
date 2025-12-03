@@ -303,7 +303,7 @@ export const attractions: Attraction[] = [
     description: 'Pope County\'s first winery, surrounded by the scenic hills of the Shawnee National Forest. View works by local artists and enjoy free wine tasting at this Golconda winery.',
     location: 'Golconda, IL',
     distance: '45 min drive',
-    image: '/images/attractions/hogg-hollow-winery.png',
+    image: '/images/attractions/hogg-hollow-winery.jpg',
     highlights: ['Free Tastings', 'Local Art', 'Pope County\'s First'],
     website: 'https://hogghollowwinery.com/',
   },
