@@ -185,7 +185,7 @@ export const attractions: Attraction[] = [
   },
   {
     id: 'macks-marina-rentals',
-    name: 'Mack\'s Marina Rentals',
+    name: 'Mack\'s Marina & Rentals',
     category: 'lake',
     region: 'central',
     lakeSubcategory: ['rentals', 'marinas'],
