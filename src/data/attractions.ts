@@ -179,7 +179,7 @@ export const attractions: Attraction[] = [
     description: 'JD and crew offer pontoon boat rentals at Port of Pyramid Acres Marina. Boats are on the water, docked, and ready for you and your crew.',
     location: 'Port of Pyramid Acres Marina',
     distance: '10 min drive',
-    image: 'https://images.unsplash.com/photo-1544551763-46a013bb70d5?w=800&q=80',
+    image: '/images/attractions/experience-llc.png',
     highlights: ['Pontoon Rentals', 'Docked & Ready', 'Family Friendly'],
     phone: '(618) 579-9783',
   },
