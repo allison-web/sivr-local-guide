@@ -128,7 +128,7 @@ export const attractions: Attraction[] = [
     description: 'A 2,300-acre crystal-clear lake renowned for excellent bass, crappie, and catfish fishing. With 93 miles of wooded shoreline, it\'s a true angler\'s paradise.',
     location: 'Marion, IL',
     distance: '10 min drive',
-    image: 'https://images.unsplash.com/photo-1544551763-46a013bb70d5?w=800&q=80',
+    image: '/images/attractions/lake-egypt-fishing.png',
     highlights: ['Bass Fishing', 'Crappie & Catfish', 'Clear Water'],
   },
   {
