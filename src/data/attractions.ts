@@ -153,7 +153,7 @@ export const attractions: Attraction[] = [
     description: 'Jeremy "Big Worm" offers pontoon boat rentals, jet ski rentals and swim mat rentals at the Port of Marion KOA Campground. Let them know you\'re staying at a Southern Illinois Vacation Rentals property for 10% off!',
     location: 'Port of Marion KOA Campground',
     distance: '15 min drive',
-    image: 'https://images.unsplash.com/photo-1530870110042-98b2cb110834?w=800&q=80',
+    image: '/images/attractions/big-worms-rides.png',
     highlights: ['Pontoon Rentals', 'Jet Ski Rentals', 'Swim Mat Rentals'],
     phone: '(618) 889-1573',
   },
