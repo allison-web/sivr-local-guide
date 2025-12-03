@@ -362,7 +362,7 @@ export const attractions: Attraction[] = [
     description: 'A farmhouse brewery located five miles from the Shawnee National Forest. Named one of the top four breweries for foraged beer by Outside Magazine and one of the most beautiful places to drink beer in the world by All About Beer Magazine.',
     location: 'Ava, IL',
     distance: '35 min drive',
-    image: 'https://images.unsplash.com/photo-1559526324-593bc073d938?w=800&q=80',
+    image: '/images/attractions/scratch-brewing.png',
     highlights: ['Foraged Ingredients', 'Farmhouse Brewery', 'World-Class', 'Rotating Selection'],
     website: 'https://scratchbeer.com/',
   },
