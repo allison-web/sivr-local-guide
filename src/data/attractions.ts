@@ -284,18 +284,6 @@ export const attractions: Attraction[] = [
     website: 'https://wichmannvineyard.com/',
   },
   {
-    id: 'kite-hill',
-    name: 'Kite Hill Vineyards',
-    category: 'wineries',
-    region: 'west',
-    description: 'A cozy tasting room and deck overlooking a lake makes the perfect place for your wine experience. Seasonal selections include wine slushies, apple cider sangria, and hot spiced wine. Picnic baskets welcome!',
-    location: 'Carbondale, IL',
-    distance: '25 min drive',
-    image: '/images/attractions/kite-hill-vineyards.png',
-    highlights: ['Lake Views', 'Wine Slushies', 'Picnic Friendly', 'Seasonal Specials'],
-    website: 'https://kitehillvineyards.com/',
-  },
-  {
     id: 'hogg-hollow',
     name: 'Hogg Hollow Winery',
     category: 'wineries',
