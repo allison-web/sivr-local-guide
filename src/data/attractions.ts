@@ -339,7 +339,7 @@ export const attractions: Attraction[] = [
     description: 'Specializes in brandy, rum, and whiskey. Visit the pub, learn about the history, walk around the property and relax. Tasting room accommodates 50 people. Spirit store available.',
     location: 'Carbondale, IL',
     distance: '25 min drive',
-    image: 'https://images.unsplash.com/photo-1527281400683-1aae777175f8?w=800&q=80',
+    image: '/images/attractions/katy-lynn-distillery.png',
     highlights: ['Brandy', 'Rum', 'Whiskey', 'Spirit Store'],
   },
   {
