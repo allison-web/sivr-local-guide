@@ -177,7 +177,7 @@ export const attractions: Attraction[] = [
     category: 'lake',
     region: 'central',
     lakeSubcategory: 'about',
-    description: 'Enjoy swimming in the clean, clear waters of Lake of Egypt. Several areas offer great swimming spots with beautiful scenery and peaceful atmosphere.',
+    description: 'Lake of Egypt is great for swimming, however there is no public beach or designated swimming area. The best way to enjoy the lake if you have not rented a property with lakefront access is to rent a boat from one of our listed vendors.',
     location: 'Lake of Egypt',
     distance: '10 min drive',
     image: '/images/attractions/lake-egypt-swimming.png',
