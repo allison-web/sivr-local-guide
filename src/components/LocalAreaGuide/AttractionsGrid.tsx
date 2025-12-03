@@ -5,6 +5,7 @@ import RegionFilter, { RegionOption } from './RegionFilter';
 import FoodSubcategoryFilter, { FoodSubcategoryOption } from './FoodSubcategoryFilter';
 import WinerySubcategoryFilter, { WinerySubcategoryOption } from './WinerySubcategoryFilter';
 import LakeSubcategoryFilter, { LakeSubcategoryOption } from './LakeSubcategoryFilter';
+import OutdoorsSubcategoryFilter, { OutdoorsSubcategoryOption } from './OutdoorsSubcategoryFilter';
 import AttractionCard from './AttractionCard';
 
 const AttractionsGrid = () => {
@@ -13,6 +14,7 @@ const AttractionsGrid = () => {
   const [activeFoodSubcategory, setActiveFoodSubcategory] = useState<FoodSubcategoryOption>('all');
   const [activeWinerySubcategory, setActiveWinerySubcategory] = useState<WinerySubcategoryOption>('all');
   const [activeLakeSubcategory, setActiveLakeSubcategory] = useState<LakeSubcategoryOption>('all');
+  const [activeOutdoorsSubcategory, setActiveOutdoorsSubcategory] = useState<OutdoorsSubcategoryOption>('all');
 
   const handleCategoryChange = (category: Category) => {
     setActiveCategory(category);
@@ -24,6 +26,9 @@ const AttractionsGrid = () => {
     }
     if (category !== 'lake') {
       setActiveLakeSubcategory('all');
+    }
+    if (category !== 'outdoors') {
+      setActiveOutdoorsSubcategory('all');
     }
   };
 
@@ -44,9 +49,13 @@ const AttractionsGrid = () => {
         activeCategory !== 'lake' ||
         activeLakeSubcategory === 'all' ||
         (a.lakeSubcategory && a.lakeSubcategory.includes(activeLakeSubcategory));
-      return categoryMatch && regionMatch && foodSubcategoryMatch && winerySubcategoryMatch && lakeSubcategoryMatch;
+      const outdoorsSubcategoryMatch =
+        activeCategory !== 'outdoors' ||
+        activeOutdoorsSubcategory === 'all' ||
+        (a.outdoorsSubcategory && a.outdoorsSubcategory.includes(activeOutdoorsSubcategory));
+      return categoryMatch && regionMatch && foodSubcategoryMatch && winerySubcategoryMatch && lakeSubcategoryMatch && outdoorsSubcategoryMatch;
     });
-  }, [activeCategory, activeRegion, activeFoodSubcategory, activeWinerySubcategory, activeLakeSubcategory]);
+  }, [activeCategory, activeRegion, activeFoodSubcategory, activeWinerySubcategory, activeLakeSubcategory, activeOutdoorsSubcategory]);
 
   return (
     <section className="bg-background py-12 sm:py-16">
@@ -96,6 +105,16 @@ const AttractionsGrid = () => {
             <LakeSubcategoryFilter
               activeSubcategory={activeLakeSubcategory}
               onSubcategoryChange={setActiveLakeSubcategory}
+            />
+          </div>
+        )}
+
+        {/* Outdoors Subcategory Filter - only shown when The Great Outdoors is selected */}
+        {activeCategory === 'outdoors' && (
+          <div className="mb-4 sm:mb-6">
+            <OutdoorsSubcategoryFilter
+              activeSubcategory={activeOutdoorsSubcategory}
+              onSubcategoryChange={setActiveOutdoorsSubcategory}
             />
           </div>
         )}
