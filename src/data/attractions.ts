@@ -632,7 +632,7 @@ export const attractions: Attraction[] = [
     description: 'Great date night venue on Kokopelli Golf Course. Upscale gastro-pub style eats with beautiful views.',
     location: 'Marion, IL',
     distance: '15 min drive',
-    image: '/images/attractions/the-turn.jpg',
+    image: '/images/attractions/the-turn.png',
     highlights: ['Golf Course Views', 'Gastro-Pub', 'Upscale'],
   },
   {
