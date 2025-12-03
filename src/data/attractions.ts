@@ -698,7 +698,7 @@ export const attractions: Attraction[] = [
     description: 'Short menu of flatbreads and flavorful Nashville-inspired bites. Great place to grab a drink and entertainment after a fancier dinner!',
     location: 'Marion, IL',
     distance: '15 min drive',
-    image: 'https://images.unsplash.com/photo-1466978913421-dad2ebd01d17?w=800&q=80',
+    image: '/images/attractions/little-nashville.png',
     highlights: ['Flatbreads', 'Nashville Inspired', 'Live Entertainment'],
     phone: '(618) 710-6002',
   },
