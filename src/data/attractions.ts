@@ -525,7 +525,7 @@ export const attractions: Attraction[] = [
     description: 'Owner William Lo founded Southern Illinois Eats facebook community! Generous portions, fresh ingredients, reasonable prices. Try the Bao!!!',
     location: 'Carbondale, IL',
     distance: '25 min drive',
-    image: 'https://images.unsplash.com/photo-1569718212165-3a8278d5f624?w=800&q=80',
+    image: '/images/attractions/new-kahala.png',
     highlights: ['Try the Bao', 'Generous Portions', 'Taiwanese Dishes'],
     website: 'https://newkahala.com/',
   },
