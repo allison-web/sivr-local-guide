@@ -213,6 +213,18 @@ export const attractions: Attraction[] = [
     highlights: ['Boutique Winery', 'Handcrafted Wines', 'Rustic Setting'],
     website: 'https://www.owlcreekvineyard.com/',
   },
+  {
+    id: 'feather-hills',
+    name: 'Feather Hills Vineyard & Winery',
+    category: 'wineries',
+    region: 'central',
+    description: 'Offering a farm-to-table menu, Fork and Vine provides the perfect ambiance for their Sunday Brunch. With indoor and outdoor seating, both carrying sweeping views of the countryside, the overall experience here is fabulous. Be sure to check their social media for live music and seasonal specials. Reservations recommended.',
+    location: 'Marion, IL',
+    distance: '15 min drive',
+    image: 'https://images.unsplash.com/photo-1506377247377-2a5b3b417ebb?w=800&q=80',
+    highlights: ['Farm to Table', 'Sunday Brunch', 'Live Music', 'Scenic Views'],
+    website: 'https://featherhillswinery.com/',
+  },
 
   // FOOD + BEVERAGE - BREAKFAST + COFFEE
   {
