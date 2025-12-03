@@ -326,7 +326,7 @@ export const attractions: Attraction[] = [
     category: 'wineries',
     region: 'central',
     description: 'A family-friendly brew works and whiskey house serving pub style food. Offers a massive variety of ale and lager beers, over 300 whiskeys and scotches. Great atmosphere for date night or a night out with friends.',
-    location: 'Marion, IL',
+    location: 'Carbondale, IL',
     distance: '15 min drive',
     image: '/images/attractions/buckwater-brew.jpg',
     highlights: ['300+ Whiskeys', 'Craft Beer', 'Pub Food', 'Family Friendly'],
