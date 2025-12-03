@@ -685,7 +685,7 @@ export const attractions: Attraction[] = [
     description: 'Top-quality gastropub with craft-butchered meats, local produce, and innovative cocktails. Menu changes seasonally.',
     location: 'Carbondale, IL',
     distance: '25 min drive',
-    image: 'https://images.unsplash.com/photo-1514933651103-005eec06c04b?w=800&q=80',
+    image: '/images/attractions/underground-public-house.png',
     highlights: ['Craft Butchered Meats', 'Seasonal Menu', 'Innovative Cocktails'],
     website: 'https://undergroundpublichouse.net/',
   },
