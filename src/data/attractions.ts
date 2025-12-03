@@ -403,7 +403,7 @@ export const attractions: Attraction[] = [
     description: 'Professional wine trail tour service offering private mini-van tours of southern Illinois for small groups of two to six adults. Work with a trip coordinator to develop a customized seven hour tour itinerary.',
     location: 'Southern Illinois',
     distance: 'Varies',
-    image: '/images/attractions/shawnee-wine-trail.png',
+    image: '/images/attractions/shawnee-shuttle.png',
     highlights: ['Private Mini-Van Tours', '2-6 Adults', 'Customized Itineraries', '7-Hour Tours'],
     website: 'http://shawneeshuttle.com/',
   },
