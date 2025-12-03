@@ -4,6 +4,7 @@ import CategoryFilter from './CategoryFilter';
 import RegionFilter, { RegionOption } from './RegionFilter';
 import FoodSubcategoryFilter, { FoodSubcategoryOption } from './FoodSubcategoryFilter';
 import WinerySubcategoryFilter, { WinerySubcategoryOption } from './WinerySubcategoryFilter';
+import LakeSubcategoryFilter, { LakeSubcategoryOption } from './LakeSubcategoryFilter';
 import AttractionCard from './AttractionCard';
 
 const AttractionsGrid = () => {
@@ -11,6 +12,7 @@ const AttractionsGrid = () => {
   const [activeRegion, setActiveRegion] = useState<RegionOption>('all');
   const [activeFoodSubcategory, setActiveFoodSubcategory] = useState<FoodSubcategoryOption>('all');
   const [activeWinerySubcategory, setActiveWinerySubcategory] = useState<WinerySubcategoryOption>('all');
+  const [activeLakeSubcategory, setActiveLakeSubcategory] = useState<LakeSubcategoryOption>('all');
 
   const handleCategoryChange = (category: Category) => {
     setActiveCategory(category);
@@ -19,6 +21,9 @@ const AttractionsGrid = () => {
     }
     if (category !== 'wineries') {
       setActiveWinerySubcategory('all');
+    }
+    if (category !== 'lake') {
+      setActiveLakeSubcategory('all');
     }
   };
 
@@ -34,9 +39,13 @@ const AttractionsGrid = () => {
         activeCategory !== 'wineries' ||
         activeWinerySubcategory === 'all' ||
         a.winerySubcategory === activeWinerySubcategory;
-      return categoryMatch && regionMatch && foodSubcategoryMatch && winerySubcategoryMatch;
+      const lakeSubcategoryMatch =
+        activeCategory !== 'lake' ||
+        activeLakeSubcategory === 'all' ||
+        a.lakeSubcategory === activeLakeSubcategory;
+      return categoryMatch && regionMatch && foodSubcategoryMatch && winerySubcategoryMatch && lakeSubcategoryMatch;
     });
-  }, [activeCategory, activeRegion, activeFoodSubcategory, activeWinerySubcategory]);
+  }, [activeCategory, activeRegion, activeFoodSubcategory, activeWinerySubcategory, activeLakeSubcategory]);
 
   return (
     <section className="bg-background py-12 sm:py-16">
@@ -76,6 +85,16 @@ const AttractionsGrid = () => {
             <WinerySubcategoryFilter
               activeSubcategory={activeWinerySubcategory}
               onSubcategoryChange={setActiveWinerySubcategory}
+            />
+          </div>
+        )}
+
+        {/* Lake Subcategory Filter - only shown when Lake of Egypt is selected */}
+        {activeCategory === 'lake' && (
+          <div className="mb-4 sm:mb-6">
+            <LakeSubcategoryFilter
+              activeSubcategory={activeLakeSubcategory}
+              onSubcategoryChange={setActiveLakeSubcategory}
             />
           </div>
         )}
