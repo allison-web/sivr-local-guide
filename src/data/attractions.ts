@@ -2,6 +2,7 @@ export type Category = 'all' | 'food' | 'lake' | 'outdoors' | 'rainy' | 'winerie
 export type Region = 'west' | 'central' | 'east';
 export type FoodSubcategory = 'breakfast' | 'lunch' | 'datenight' | 'sweets';
 export type WinerySubcategory = 'winery' | 'brewery' | 'distillery' | 'shuttle';
+export type LakeSubcategory = 'about' | 'rentals' | 'marinas';
 
 export interface Attraction {
   id: string;
@@ -18,6 +19,7 @@ export interface Attraction {
   hours?: string;
   foodSubcategory?: FoodSubcategory[];
   winerySubcategory?: WinerySubcategory;
+  lakeSubcategory?: LakeSubcategory;
 }
 
 export const foodSubcategories: { id: FoodSubcategory | 'all'; label: string; icon: string }[] = [
@@ -34,6 +36,13 @@ export const winerySubcategories: { id: WinerySubcategory | 'all'; label: string
   { id: 'brewery', label: 'Breweries', icon: 'Beer' },
   { id: 'distillery', label: 'Distilleries', icon: 'GlassWater' },
   { id: 'shuttle', label: 'Shuttle Services', icon: 'Bus' },
+];
+
+export const lakeSubcategories: { id: LakeSubcategory | 'all'; label: string; icon: string }[] = [
+  { id: 'all', label: 'All', icon: 'Waves' },
+  { id: 'about', label: 'About the Lake', icon: 'Info' },
+  { id: 'rentals', label: 'Rentals', icon: 'Ship' },
+  { id: 'marinas', label: 'Marinas', icon: 'Anchor' },
 ];
 
 export const categories: { id: Category; label: string; icon: string }[] = [
@@ -115,6 +124,7 @@ export const attractions: Attraction[] = [
     name: 'Lake of Egypt Fishing',
     category: 'lake',
     region: 'central',
+    lakeSubcategory: 'about',
     description: 'A 2,300-acre crystal-clear lake renowned for excellent bass, crappie, and catfish fishing. With 93 miles of wooded shoreline, it\'s a true angler\'s paradise.',
     location: 'Marion, IL',
     distance: '10 min drive',
@@ -126,6 +136,7 @@ export const attractions: Attraction[] = [
     name: 'Lake Time Pontoon Rentals',
     category: 'lake',
     region: 'central',
+    lakeSubcategory: 'rentals',
     description: 'Rent a pontoon or kayak for a perfect day on the water! Explore the beautiful coves and inlets of Lake of Egypt at your own pace.',
     location: 'Lake of Egypt',
     distance: '10 min drive',
@@ -139,6 +150,7 @@ export const attractions: Attraction[] = [
     name: 'Big Worm\'s Jet Ski & Pontoon Rentals',
     category: 'lake',
     region: 'central',
+    lakeSubcategory: 'rentals',
     description: 'Get your adrenaline pumping with jet ski rentals or enjoy a relaxing day on a pontoon boat. Located at the Marion/Shawnee Forest KOA.',
     location: 'Lake of Egypt',
     distance: '15 min drive',
@@ -151,6 +163,7 @@ export const attractions: Attraction[] = [
     name: 'Lake of Egypt Swimming',
     category: 'lake',
     region: 'central',
+    lakeSubcategory: 'about',
     description: 'Enjoy swimming in the clean, clear waters of Lake of Egypt. Several areas offer great swimming spots with beautiful scenery and peaceful atmosphere.',
     location: 'Lake of Egypt',
     distance: '10 min drive',
