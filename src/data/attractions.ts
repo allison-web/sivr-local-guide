@@ -140,7 +140,7 @@ export const attractions: Attraction[] = [
     description: 'Find detailed maps and important rules for Lake of Egypt. Learn about speed limits, no-wake zones, fishing regulations, and designated areas to ensure a safe and enjoyable experience.',
     location: 'Lake of Egypt',
     distance: '10 min drive',
-    image: 'https://images.unsplash.com/photo-1524661135-423995f22d0b?w=800&q=80',
+    image: '/images/attractions/lake-egypt-map.png',
     highlights: ['Lake Maps', 'Boating Rules', 'Safety Guidelines'],
   },
   {
