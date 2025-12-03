@@ -421,7 +421,7 @@ export const attractions: Attraction[] = [
     description: 'No typical menu—runs chef\'s specials for lunch or dinner. Each meal comes with homemade bread and dessert. Recent dinners included stuffed pork chops and raspberry napoleons!',
     location: 'Anna, IL',
     distance: '35 min drive',
-    image: 'https://images.unsplash.com/photo-1466637574441-749b8f19452f?w=800&q=80',
+    image: '/images/attractions/kitchen-on-lafayette.png',
     highlights: ['Chef\'s Specials', 'Homemade Bread', 'Dessert Included'],
     website: 'https://www.thekitchenonlafayette.com/',
   },
