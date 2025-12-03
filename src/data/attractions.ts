@@ -205,7 +205,7 @@ export const attractions: Attraction[] = [
     description: 'At the south end of the lake, enjoy the water park (2 hour time slots), boozy adult shakes from the Watering Hole, gourmet pizza, burgers, ice cream and more!',
     location: 'South End of Lake',
     distance: '15 min drive',
-    image: 'https://images.unsplash.com/photo-1504280390367-361c6d9f38f4?w=800&q=80',
+    image: '/images/attractions/marion-koa.png',
     highlights: ['Water Park', 'Full Bar', 'Food & Ice Cream'],
   },
   {
