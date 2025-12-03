@@ -170,7 +170,7 @@ export const attractions: Attraction[] = [
     description: 'A family-owned winery with 18 award-winning wines crafted on-site. Enjoy scenic views of the Cobden hills and a warm, inviting atmosphere perfect for relaxing with friends.',
     location: 'Cobden, IL',
     distance: '30 min drive',
-    image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&q=80',
+    image: '/images/attractions/starview-vineyards.jpg',
     highlights: ['18 Award-Winning Wines', 'Family Owned', 'Valley Views'],
     website: 'https://www.starviewvineyards.com/',
     phone: '(618) 893-9463',
