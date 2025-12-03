@@ -317,7 +317,7 @@ export const attractions: Attraction[] = [
     description: 'One of the newest features in the heart of the wine trail—but no wine here! Signature bourbon drinks all around with a full bar for other preferences.',
     location: 'Alto Pass, IL',
     distance: '30 min drive',
-    image: 'https://images.unsplash.com/photo-1527281400683-1aae777175f8?w=800&q=80',
+    image: '/images/attractions/havisham-bourbon.jpg',
     highlights: ['Signature Bourbon', 'Full Bar', 'Wine Trail Location'],
   },
   {
