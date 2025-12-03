@@ -778,7 +778,7 @@ export const attractions: Attraction[] = [
     description: 'Specialty coffee, breakfast all day, soup and sandwiches. The quaintness makes you want to linger and the Big Foot out front begs for a selfie!',
     location: 'Harrisburg, IL',
     distance: '30 min drive',
-    image: 'https://images.unsplash.com/photo-1445116572660-236099ec97a0?w=800&q=80',
+    image: '/images/attractions/steam-cafe.png',
     highlights: ['Specialty Coffee', 'Breakfast All Day', 'Big Foot Selfie'],
   },
   {
