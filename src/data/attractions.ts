@@ -374,7 +374,7 @@ export const attractions: Attraction[] = [
     description: 'This micro-brewery quietly puts out small batches of craft beer for beer enthusiasts to enjoy. Stop in for a tour of the operation and stick around for a sampling. Tours every Saturday and Sunday.',
     location: 'Murphysboro, IL',
     distance: '20 min drive',
-    image: 'https://images.unsplash.com/photo-1559526324-593bc073d938?w=800&q=80',
+    image: '/images/attractions/big-muddy-brewing.png',
     highlights: ['Small Batch', 'Brewery Tours', 'Craft Beer', 'Weekend Tours'],
     website: 'https://bigmuddybrewing.com/',
   },
