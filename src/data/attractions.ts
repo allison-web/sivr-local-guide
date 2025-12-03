@@ -581,19 +581,6 @@ export const attractions: Attraction[] = [
     highlights: ['Floating Restaurant', 'Fresh Catfish', 'Ohio River Views'],
     phone: '(618) 287-2333',
   },
-  {
-    id: 'cave-in-rock-restaurant',
-    name: 'Cave-In-Rock State Park Restaurant',
-    category: 'food',
-    region: 'east',
-    foodSubcategory: ['lunch'],
-    description: 'Stunning bluff views over the Ohio River! AYCE buffet with family-style food, outdoor patio, and live music in peak season.',
-    location: 'Cave-In-Rock, IL',
-    distance: '55 min drive',
-    image: 'https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=800&q=80',
-    highlights: ['Ohio River Views', 'AYCE Buffet', 'Live Music'],
-    website: 'http://www.caveinrockkaylors.com/',
-  },
 
   // FOOD + BEVERAGE - DATE NIGHT
   {
