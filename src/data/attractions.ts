@@ -317,7 +317,7 @@ export const attractions: Attraction[] = [
     description: 'The scenic drive alone makes this off-the-beaten path eatery worth it! Extensive menu including the prime rib sandwich, crying pig, and hillbilly wrap. Live entertainment in warm season.',
     location: 'Eddyville, IL',
     distance: '40 min drive',
-    image: 'https://images.unsplash.com/photo-1466978913421-dad2ebd01d17?w=800&q=80',
+    image: '/images/attractions/shotgun-eddys.png',
     highlights: ['Scenic Drive', 'Prime Rib Sandwich', 'Live Entertainment'],
     website: 'https://shotguneddys.com/',
     phone: '(618) 672-3339',
