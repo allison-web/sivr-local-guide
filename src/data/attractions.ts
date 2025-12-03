@@ -125,7 +125,7 @@ export const attractions: Attraction[] = [
     category: 'lake',
     region: 'central',
     lakeSubcategory: 'about',
-    description: 'A 2,300-acre crystal-clear lake renowned for excellent bass, crappie, and catfish fishing. With 93 miles of wooded shoreline, it\'s a true angler\'s paradise.',
+    description: 'Offers excellent fishing for bass, crappie, catfish, and bluegill, with spring and fall being prime times. The lake is known for its many coves, brush piles, and underwater structures that attract fish. Anglers can use a variety of techniques, including specialized jigs for crappie and live baits or cut baits for catfish, while also needing to be aware of and follow specific rules for public access and fishing on the privately owned lake.',
     location: 'Marion, IL',
     distance: '10 min drive',
     image: '/images/attractions/lake-egypt-fishing.png',
