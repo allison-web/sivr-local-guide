@@ -280,7 +280,7 @@ export const attractions: Attraction[] = [
     description: 'Located among the beautiful rolling hills of the Shawnee National Forest. Sample over 20 varieties of wine, hand-crafted beers, and award-winning hard apple cider. Full service restaurant Friday and Saturday evenings with live music every weekend.',
     location: 'Alto Pass, IL',
     distance: '30 min drive',
-    image: '/images/attractions/von-jakob-winery.jpg',
+    image: '/images/attractions/von-jakob-winery.png',
     highlights: ['20+ Wine Varieties', 'Craft Beer', 'Hard Cider', 'Live Music'],
     website: 'https://vonjakobvineyard.com/',
   },
