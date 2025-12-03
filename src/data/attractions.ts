@@ -486,7 +486,7 @@ export const attractions: Attraction[] = [
     description: 'If you haven\'t written your name on the wall here, don\'t miss the opportunity! Phenomenal pizza, kitschy vibe, excellent salad bar. Wave to the mannequins in the tower!',
     location: 'Carbondale, IL',
     distance: '25 min drive',
-    image: '/images/attractions/italian-village.jpg',
+    image: '/images/attractions/italian-village.png',
     highlights: ['Write on the Wall', 'Great Pizza', 'Outdoor Seating'],
     website: 'https://italianvillagecarbondale.com/',
   },
