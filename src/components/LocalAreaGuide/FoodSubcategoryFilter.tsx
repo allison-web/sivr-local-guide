@@ -31,11 +31,11 @@ const FoodSubcategoryFilter = ({ activeSubcategory, onSubcategoryChange }: FoodS
             className={cn(
               'group flex items-center gap-1.5 rounded-full px-3 py-1.5 text-xs font-medium transition-all duration-300',
               isActive
-                ? 'bg-sivr-green text-white shadow-md'
+                ? 'bg-sivr-blue text-primary-foreground shadow-md'
                 : 'bg-card text-muted-foreground shadow-sm hover:bg-secondary hover:text-foreground'
             )}
           >
-            <Icon className={cn('h-3 w-3', isActive && 'text-white')} />
+            <Icon className={cn('h-3 w-3', isActive && 'text-primary-foreground')} />
             <span>{subcategory.label}</span>
           </button>
         );
