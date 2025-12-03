@@ -781,18 +781,6 @@ export const attractions: Attraction[] = [
     image: '/images/attractions/steam-cafe.png',
     highlights: ['Specialty Coffee', 'Breakfast All Day', 'Big Foot Selfie'],
   },
-  {
-    id: 'golconda-dari-barr',
-    name: 'Golconda Dari-Barr',
-    category: 'food',
-    region: 'east',
-    foodSubcategory: ['sweets', 'lunch'],
-    description: 'Like stepping into a time machine with throwback diner feels. Local hot spot with American comfort food, homemade pies, and slow-paced hometown feel.',
-    location: 'Golconda, IL',
-    distance: '45 min drive',
-    image: 'https://images.unsplash.com/photo-1495147466023-ac5c588e2e94?w=800&q=80',
-    highlights: ['Throwback Diner', 'Homemade Pies', 'Hometown Feel'],
-  },
 
   // RAINY DAY FUN
   {
