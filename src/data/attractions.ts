@@ -512,7 +512,7 @@ export const attractions: Attraction[] = [
     description: 'A unique blend of southern-specialty cooking with BBQ that competes with the finest nationally. Try the Signature Brisket Burger! Near Little Grand Canyon.',
     location: 'Pomona, IL',
     distance: '25 min drive',
-    image: 'https://images.unsplash.com/photo-1544025162-d76694265947?w=800&q=80',
+    image: '/images/attractions/mases-place.png',
     highlights: ['Smoked Pork', 'Brisket Burger', 'Near Little Grand Canyon'],
     website: 'https://www.masesplace.com/',
   },
