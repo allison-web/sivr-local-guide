@@ -644,7 +644,7 @@ export const attractions: Attraction[] = [
     description: 'Elevated seasonal menus with handcrafted cocktails and mocktails. Save room for dessert! Reservations highly recommended.',
     location: 'Benton, IL',
     distance: '25 min drive',
-    image: '/images/attractions/seasoning-bistro.jpg',
+    image: '/images/attractions/seasoning-bistro.png',
     highlights: ['Seasonal Menu', 'Craft Cocktails', 'Save Room for Dessert'],
     website: 'https://seasoningbistro.com/',
   },
