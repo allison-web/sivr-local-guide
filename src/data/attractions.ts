@@ -183,7 +183,7 @@ export const attractions: Attraction[] = [
     description: 'The oldest and largest vineyard in Southern Illinois! The Renzaglia Family welcomes you to taste some of the finest wines produced in the United States.',
     location: 'Alto Pass, IL',
     distance: '30 min drive',
-    image: '/images/attractions/alto-vineyards.png',
+    image: '/images/attractions/alto-vineyards.jpg',
     highlights: ['Oldest in Region', 'Award-Winning', 'Family Tradition'],
     website: 'https://altovineyards.net/',
     phone: '(618) 893-4898',
