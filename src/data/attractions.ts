@@ -328,7 +328,7 @@ export const attractions: Attraction[] = [
     description: 'A family-friendly brew works and whiskey house serving pub style food. Offers a massive variety of ale and lager beers, over 300 whiskeys and scotches. Great atmosphere for date night or a night out with friends.',
     location: 'Marion, IL',
     distance: '15 min drive',
-    image: 'https://images.unsplash.com/photo-1559526324-593bc073d938?w=800&q=80',
+    image: '/images/attractions/buckwater-brew.jpg',
     highlights: ['300+ Whiskeys', 'Craft Beer', 'Pub Food', 'Family Friendly'],
   },
   {
