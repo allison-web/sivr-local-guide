@@ -794,18 +794,6 @@ export const attractions: Attraction[] = [
     highlights: ['Top Chef Runner-Up', 'Farm to Table', 'Southern Cuisine'],
     website: 'https://freighthousepaducah.com/',
   },
-  {
-    id: 'feather-hills-winery',
-    name: 'Feather Hills Winery',
-    category: 'food',
-    region: 'east',
-    foodSubcategory: ['datenight', 'breakfast'],
-    description: 'Offering a farm-to-table menu, Fork and Vine provides the perfect ambiance for their Sunday Brunch. With indoor and outdoor seating, both carrying sweeping views of the countryside, the overall experience here is fabulous. Be sure to check out their social media for live music and seasonal specials. Reservations recommended.',
-    location: 'Marion, IL',
-    distance: '15 min drive',
-    image: 'https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?w=800&q=80',
-    highlights: ['Farm to Table', 'Sunday Brunch', 'Live Music', 'Scenic Views'],
-  },
 
   // RAINY DAY FUN
   {
