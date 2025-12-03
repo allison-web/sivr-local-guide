@@ -189,11 +189,11 @@ export const attractions: Attraction[] = [
     category: 'lake',
     region: 'central',
     lakeSubcategory: 'rentals',
-    description: 'Enjoy a relaxing day on Lake of Egypt with paddle board rentals from Mack\'s Marina. Online reservations only.',
+    description: 'Enjoy a relaxing day on Lake of Egypt with paddle board and pontoon rentals from Mack\'s Marina. Online reservations only.',
     location: 'Mack\'s Marina',
     distance: '10 min drive',
     image: '/images/attractions/macks-marina.png',
-    highlights: ['Paddle Board Rentals', 'Online Booking'],
+    highlights: ['Paddle Board Rentals', 'Pontoon Rentals', 'Online Booking'],
   },
   // MARINAS
   {
