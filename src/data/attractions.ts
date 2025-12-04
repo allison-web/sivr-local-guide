@@ -237,7 +237,7 @@ export const attractions: Attraction[] = [
     description: 'The largest shelter bluff in Illinois! Watching kids climb these mammoth boulders is an absolute joy. We go back frequently - it never gets old.',
     location: 'Shawnee National Forest',
     distance: '25 min drive',
-    image: '/images/attractions/hawks-cave.jpg',
+    image: '/images/attractions/hawks-cave.png',
     highlights: ['Largest Shelter Bluff', 'Boulder Climbing', 'Family Favorite'],
   },
   {
