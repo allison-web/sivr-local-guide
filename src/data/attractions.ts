@@ -189,7 +189,7 @@ export const attractions: Attraction[] = [
     description: 'A short walk on flat land leads to an old train tunnel from the 1800-1900s. The 50+ mile trail is an old train rail. Bikes welcome! Great photo opportunity with minimal effort.',
     location: 'Tunnel Hill, IL',
     distance: '35 min drive',
-    image: '/images/attractions/tunnel-hill.jpg',
+    image: '/images/attractions/tunnel-hill.png',
     highlights: ['Historic Train Tunnel', 'Bike Friendly', 'Easy Walk'],
   },
   {
