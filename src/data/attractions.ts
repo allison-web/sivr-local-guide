@@ -287,7 +287,7 @@ export const attractions: Attraction[] = [
     description: 'Home to the State Champion Cherry Bark Oak! Experience diverse wetlands and over 100 endangered species among Cache River Wetlands. Don\'t miss the Wetlands Center or ecotour canoe trips!',
     location: 'Cache River Wetlands',
     distance: '35 min drive',
-    image: '/images/attractions/heron-pond.jpg',
+    image: '/images/attractions/heron-pond.png',
     highlights: ['Champion Oak Tree', 'Wetlands', 'Canoe Tours'],
   },
   {
