@@ -153,7 +153,7 @@ export const attractions: Attraction[] = [
     description: 'View magnificent scenery from the top of Rim Rock! Known for outstanding floral beauty, the upper and lower trails are flush with woodland flowers each Spring. Designated a National Recreation Trail in 1980.',
     location: 'Shawnee National Forest',
     distance: '40 min drive',
-    image: '/images/attractions/rim-rock.jpg',
+    image: '/images/attractions/rim-rock.png',
     highlights: ['National Recreation Trail', 'Spring Flowers', 'Scenic Views'],
   },
   {
