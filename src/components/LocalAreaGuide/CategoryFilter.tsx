@@ -20,8 +20,8 @@ interface CategoryFilterProps {
 
 const CategoryFilter = ({ activeCategory, onCategoryChange }: CategoryFilterProps) => {
   return (
-    <div className="w-full overflow-x-auto pb-2 -mb-2 scrollbar-hide">
-      <div className="flex gap-2 sm:gap-3 sm:flex-wrap sm:justify-center min-w-max sm:min-w-0 px-1">
+    <div className="w-full pb-2 -mb-2">
+      <div className="flex flex-wrap justify-center gap-2 sm:gap-3 px-1">
         {categories.map((category) => {
           const Icon = iconMap[category.icon as keyof typeof iconMap];
           const isActive = activeCategory === category.id;
@@ -31,7 +31,7 @@ const CategoryFilter = ({ activeCategory, onCategoryChange }: CategoryFilterProp
               key={category.id}
               onClick={() => onCategoryChange(category.id)}
               className={cn(
-                'group flex items-center gap-1.5 sm:gap-2 rounded-full px-3 sm:px-5 py-2 sm:py-2.5 text-xs sm:text-sm font-medium transition-all duration-300 whitespace-nowrap flex-shrink-0',
+                'group flex items-center gap-1.5 sm:gap-2 rounded-full px-3 sm:px-5 py-2 sm:py-2.5 text-xs sm:text-sm font-medium transition-all duration-300',
                 isActive
                   ? 'bg-sivr-blue text-primary-foreground shadow-md'
                   : 'bg-card text-muted-foreground shadow-card hover:bg-secondary hover:text-foreground hover:shadow-card-hover'
