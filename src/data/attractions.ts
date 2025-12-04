@@ -1313,7 +1313,7 @@ export const attractions: Attraction[] = [
     phone: '(618) 993-9010',
   },
   {
-    id: 'giant-city-lodge',
+    id: 'giant-city-lodge-restaurant',
     name: 'Giant City Lodge',
     category: 'food',
     region: 'west',
