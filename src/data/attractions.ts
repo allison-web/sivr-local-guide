@@ -201,7 +201,7 @@ export const attractions: Attraction[] = [
     description: 'The Largest Sandstone Cave in North America and a recognized stop on the Underground Railroad! Great for families with a fun, safe, short hike and gorgeous views.',
     location: 'Shawnee National Forest',
     distance: '40 min drive',
-    image: '/images/attractions/sand-cave.jpg',
+    image: '/images/attractions/sand-cave.png',
     highlights: ['Largest Sandstone Cave', 'Underground Railroad', 'Family Friendly'],
   },
   {
