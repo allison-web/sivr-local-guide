@@ -275,7 +275,7 @@ export const attractions: Attraction[] = [
     description: 'Don\'t forget to pet our friend the giant troll face that guards the bridge! The first half (starting opposite the pavilion) is the best - the rest is great exercise.',
     location: 'Giant City State Park',
     distance: '25 min drive',
-    image: '/images/attractions/giant-city-trail.jpg',
+    image: '/images/attractions/round-bluff.jpg',
     highlights: ['Troll Face Rock', 'Bridge Views', 'Great Exercise'],
   },
   {
