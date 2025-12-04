@@ -3,7 +3,7 @@ export type Region = 'west' | 'central' | 'east';
 export type FoodSubcategory = 'breakfast' | 'lunch' | 'datenight' | 'sweets';
 export type WinerySubcategory = 'winery' | 'brewery' | 'distillery' | 'shuttle';
 export type LakeSubcategory = 'about' | 'rentals' | 'marinas';
-export type OutdoorsSubcategory = 'waterfalls' | 'hiking' | 'adventures' | 'sightseeing' | 'swimming' | 'fishing';
+export type OutdoorsSubcategory = 'waterfalls' | 'hiking' | 'adventures' | 'sightseeing' | 'swimming' | 'fishing' | 'golf';
 
 export interface Attraction {
   id: string;
@@ -55,6 +55,7 @@ export const outdoorsSubcategories: { id: OutdoorsSubcategory | 'all'; label: st
   { id: 'sightseeing', label: 'Sightseeing', icon: 'Eye' },
   { id: 'swimming', label: 'Swimming', icon: 'Waves' },
   { id: 'fishing', label: 'Fishing', icon: 'Fish' },
+  { id: 'golf', label: 'Golf', icon: 'Flag' },
 ];
 
 export const categories: { id: Category; label: string; icon: string }[] = [
