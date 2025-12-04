@@ -335,7 +335,7 @@ export const attractions: Attraction[] = [
     description: 'PREMIERE HIKE! A 3.6-mile loop with drastic elevation changes (350-700 ft). Features majestic bluffs, seasonal waterfalls, and panoramic views of the canyon, Big Muddy River, and Fountain Bluff.',
     location: 'Murphysboro, IL',
     distance: '30 min drive',
-    image: '/images/attractions/little-grand-canyon.jpg',
+    image: '/images/attractions/little-grand-canyon.png',
     highlights: ['3.6 Mile Loop', 'Canyon Views', 'Seasonal Waterfalls'],
     website: 'https://www.shawneeforest.com/',
   },
