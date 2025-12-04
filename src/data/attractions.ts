@@ -72,7 +72,7 @@ export const attractions: Attraction[] = [
   // THE GREAT OUTDOORS - WATERFALLS
   {
     id: 'big-rocky-hollow',
-    name: 'Big Rocky Hollow Trail (Ferne Clyffe)',
+    name: 'Big Rocky Hollow Trail',
     category: 'outdoors',
     region: 'central',
     outdoorsSubcategory: ['waterfalls'],
@@ -84,7 +84,7 @@ export const attractions: Attraction[] = [
   },
   {
     id: 'bork-falls',
-    name: 'Bork Falls (Ferne Clyffe)',
+    name: 'Bork Falls',
     category: 'outdoors',
     region: 'central',
     outdoorsSubcategory: ['waterfalls'],
