@@ -1,4 +1,4 @@
-import { Mountain, Droplets, TreePine, Trees, Compass } from 'lucide-react';
+import { Mountain, Droplets, TreePine, Compass, Eye, Waves, Fish } from 'lucide-react';
 import { OutdoorsSubcategory, outdoorsSubcategories } from '@/data/attractions';
 import { cn } from '@/lib/utils';
 
@@ -6,8 +6,10 @@ const iconMap = {
   Mountain,
   Droplets,
   TreePine,
-  Trees,
   Compass,
+  Eye,
+  Waves,
+  Fish,
 };
 
 type OutdoorsSubcategoryOption = OutdoorsSubcategory | 'all';
