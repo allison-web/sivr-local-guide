@@ -299,7 +299,7 @@ export const attractions: Attraction[] = [
     description: 'Perfect way to explore Giant City\'s protected habitat. Winds along a shaded path with towering sandstone bluffs. Great for birdwatching - spot Pileated Woodpeckers and Carolina Wrens!',
     location: 'Giant City State Park',
     distance: '25 min drive',
-    image: '/images/attractions/rim-rock.jpg',
+    image: '/images/attractions/trillium-trail.png',
     highlights: ['Birdwatching', 'Sandstone Bluffs', 'Shaded Path'],
   },
   {
