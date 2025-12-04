@@ -249,7 +249,7 @@ export const attractions: Attraction[] = [
     description: 'Truly magical once you get through the forest (longer hike to "the den"). Congress designated this 1195-acre wilderness in 1990. Part of the River to River Trail.',
     location: 'Panther Den Wilderness',
     distance: '30 min drive',
-    image: '/images/attractions/panther-den.jpg',
+    image: '/images/attractions/panther-den.png',
     highlights: ['Wilderness Area', 'River to River Trail', 'Magical Den'],
   },
   {
