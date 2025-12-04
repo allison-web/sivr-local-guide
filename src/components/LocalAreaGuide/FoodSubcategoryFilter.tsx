@@ -19,8 +19,8 @@ interface FoodSubcategoryFilterProps {
 
 const FoodSubcategoryFilter = ({ activeSubcategory, onSubcategoryChange }: FoodSubcategoryFilterProps) => {
   return (
-    <div className="w-full overflow-x-auto pb-2 -mb-2 scrollbar-hide">
-      <div className="flex gap-2 sm:flex-wrap sm:justify-center min-w-max sm:min-w-0 px-1">
+    <div className="w-full pb-2 -mb-2">
+      <div className="flex flex-wrap justify-center gap-2 px-1">
         {foodSubcategories.map((subcategory) => {
           const Icon = iconMap[subcategory.icon as keyof typeof iconMap];
           const isActive = activeSubcategory === subcategory.id;
@@ -30,7 +30,7 @@ const FoodSubcategoryFilter = ({ activeSubcategory, onSubcategoryChange }: FoodS
               key={subcategory.id}
               onClick={() => onSubcategoryChange(subcategory.id)}
               className={cn(
-                'group flex items-center gap-1.5 rounded-full px-3 py-1.5 text-xs font-medium transition-all duration-300 whitespace-nowrap flex-shrink-0',
+                'group flex items-center gap-1.5 rounded-full px-3 py-1.5 text-xs font-medium transition-all duration-300',
                 isActive
                   ? 'bg-sivr-blue text-primary-foreground shadow-md'
                   : 'bg-card text-muted-foreground shadow-sm hover:bg-secondary hover:text-foreground'
