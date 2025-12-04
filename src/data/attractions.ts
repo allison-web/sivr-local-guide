@@ -79,7 +79,7 @@ export const attractions: Attraction[] = [
     description: 'Often described as the best waterfall in Southern Illinois. Easy to walk to, plenty to see, and fun rocks to climb by the 100 foot falls. There is never a bad season to visit!',
     location: 'Ferne Clyffe State Park',
     distance: '20 min drive',
-    image: 'https://images.unsplash.com/photo-1432405972618-c60b0225b8f9?w=800&q=80',
+    image: '/images/attractions/big-rocky-hollow.jpg',
     highlights: ['100 Foot Falls', 'Easy Walk', 'Year-Round Beauty'],
   },
   {
@@ -91,7 +91,7 @@ export const attractions: Attraction[] = [
     description: 'Bork Falls is a breathtaking twin waterfall that flows into quite the swimming hole. WARNING: The road is commonly washed out and steep - 4WD recommended.',
     location: 'Ferne Clyffe State Park',
     distance: '25 min drive',
-    image: 'https://images.unsplash.com/photo-1475070929565-c985b496cb9f?w=800&q=80',
+    image: '/images/attractions/bork-falls.jpg',
     highlights: ['Twin Waterfall', 'Swimming Hole', '4WD Recommended'],
   },
   {
@@ -103,7 +103,7 @@ export const attractions: Attraction[] = [
     description: 'Jackson Falls is nothing short of amazing. The trails are not for the faint at heart but they are worth the hike if you are up for the instagrammable scenery. Pack some gear to get wet!',
     location: 'Shawnee National Forest - East',
     distance: '40 min drive',
-    image: 'https://images.unsplash.com/photo-1433086966358-54859d0ed716?w=800&q=80',
+    image: '/images/attractions/jackson-falls.jpg',
     highlights: ['Instagrammable', 'Adventure Hike', 'Swimming'],
   },
   {
@@ -115,7 +115,7 @@ export const attractions: Attraction[] = [
     description: 'Arguably one of the most popular swimming areas in Southern Illinois. Features a cascading multi-layer waterfall feeding a deep pool. Easy access with basic amenities.',
     location: 'Kinkaid Lake State Fish & Wildlife Area',
     distance: '30 min drive',
-    image: 'https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?w=800&q=80',
+    image: '/images/attractions/kinkaid-spillway.jpg',
     highlights: ['Swimming', 'Multi-Layer Waterfall', 'Easy Access'],
   },
   {
@@ -127,7 +127,7 @@ export const attractions: Attraction[] = [
     description: 'Situated on a giant block of sandstone, explore breathtaking canyons and waterfalls. A 2-for-1 deal with the wooded loop trail plus open boulders and waterfall/bridge. Tip: Stop at the Chocolate Factory nearby!',
     location: 'Dixon Springs State Park',
     distance: '50 min drive',
-    image: 'https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800&q=80',
+    image: '/images/attractions/dixon-springs.jpg',
     highlights: ['Canyons', 'Waterfalls', 'Photo Ops'],
   },
   // HIKING
@@ -140,7 +140,7 @@ export const attractions: Attraction[] = [
     description: 'Of course it\'s #1! The most popular hike in Shawnee National Forest with spectacular views and unique rock formations sculpted over 320 million years. Short hike, amazing reward.',
     location: 'Herod, IL',
     distance: '35 min drive',
-    image: 'https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800&q=80',
+    image: '/images/attractions/garden-of-the-gods.jpg',
     highlights: ['Observation Trail', 'Sunrise/Sunset Views', 'Photography Paradise'],
     website: 'https://www.fs.usda.gov/recarea/shawnee/recarea/?recid=10680',
   },
@@ -153,7 +153,7 @@ export const attractions: Attraction[] = [
     description: 'View magnificent scenery from the top of Rim Rock! Known for outstanding floral beauty, the upper and lower trails are flush with woodland flowers each Spring. Designated a National Recreation Trail in 1980.',
     location: 'Shawnee National Forest',
     distance: '40 min drive',
-    image: 'https://images.unsplash.com/photo-1447752875215-b2761acb3c5d?w=800&q=80',
+    image: '/images/attractions/rim-rock.jpg',
     highlights: ['National Recreation Trail', 'Spring Flowers', 'Scenic Views'],
   },
   {
@@ -165,7 +165,7 @@ export const attractions: Attraction[] = [
     description: 'A pretty good hike with an amazing reward. Features Indian Kitchen (Lusk Creek Canyon Nature Preserve) with outstanding scenic views. Popular for canoeing/kayaking in spring when creek is high.',
     location: 'Pope County',
     distance: '45 min drive',
-    image: 'https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=800&q=80',
+    image: '/images/attractions/lusk-creek.jpg',
     highlights: ['Indian Kitchen', 'Wilderness', 'Kayaking'],
   },
   {
@@ -177,7 +177,7 @@ export const attractions: Attraction[] = [
     description: 'Home to Illinois\' largest natural bridge! Also check out Devil\'s Backbone on White Tail Loop trail. Crystal-clear springs, box canyons, and natural rock shelters make this one of the most scenic areas.',
     location: 'Ozark, IL',
     distance: '45 min drive',
-    image: 'https://images.unsplash.com/photo-1432405972618-c60b0225b8f9?w=800&q=80',
+    image: '/images/attractions/bell-smith-springs.jpg',
     highlights: ['Largest Natural Bridge', 'Devil\'s Backbone', 'Swimming Hole'],
   },
   {
@@ -189,7 +189,7 @@ export const attractions: Attraction[] = [
     description: 'A short walk on flat land leads to an old train tunnel from the 1800-1900s. The 50+ mile trail is an old train rail. Bikes welcome! Great photo opportunity with minimal effort.',
     location: 'Tunnel Hill, IL',
     distance: '35 min drive',
-    image: 'https://images.unsplash.com/photo-1473773508845-188df298d2d1?w=800&q=80',
+    image: '/images/attractions/tunnel-hill.jpg',
     highlights: ['Historic Train Tunnel', 'Bike Friendly', 'Easy Walk'],
   },
   {
@@ -201,7 +201,7 @@ export const attractions: Attraction[] = [
     description: 'The Largest Sandstone Cave in North America and a recognized stop on the Underground Railroad! Great for families with a fun, safe, short hike and gorgeous views.',
     location: 'Shawnee National Forest',
     distance: '40 min drive',
-    image: 'https://images.unsplash.com/photo-1504280390367-361c6d9f38f4?w=800&q=80',
+    image: '/images/attractions/sand-cave.jpg',
     highlights: ['Largest Sandstone Cave', 'Underground Railroad', 'Family Friendly'],
   },
   {
@@ -213,7 +213,7 @@ export const attractions: Attraction[] = [
     description: 'More of a sightseeing stop with a little exercise! The 55-foot wide cave mouth leads to a 100-foot vertical fissure. Used by French explorers, river pirates, and pioneers. Rich history!',
     location: 'Cave-In-Rock State Park',
     distance: '55 min drive',
-    image: 'https://images.unsplash.com/photo-1469474968028-56623f02e42e?w=800&q=80',
+    image: '/images/attractions/cave-in-rock.jpg',
     highlights: ['Historic Cave', 'Ohio River Views', 'Pirate History'],
   },
   {
@@ -225,7 +225,7 @@ export const attractions: Attraction[] = [
     description: 'Breathtaking falls - can easily be top 5 with the right companions. Be cautious with little ones as the terrain can be challenging.',
     location: 'Shawnee National Forest',
     distance: '45 min drive',
-    image: 'https://images.unsplash.com/photo-1475070929565-c985b496cb9f?w=800&q=80',
+    image: '/images/attractions/burden-falls.jpg',
     highlights: ['Waterfalls', 'Scenic Beauty', 'Adventure Hike'],
   },
   {
@@ -237,7 +237,7 @@ export const attractions: Attraction[] = [
     description: 'The largest shelter bluff in Illinois! Watching kids climb these mammoth boulders is an absolute joy. We go back frequently - it never gets old.',
     location: 'Shawnee National Forest',
     distance: '25 min drive',
-    image: 'https://images.unsplash.com/photo-1448375240586-882707db888b?w=800&q=80',
+    image: '/images/attractions/hawks-cave.jpg',
     highlights: ['Largest Shelter Bluff', 'Boulder Climbing', 'Family Favorite'],
   },
   {
@@ -249,7 +249,7 @@ export const attractions: Attraction[] = [
     description: 'Truly magical once you get through the forest (longer hike to "the den"). Congress designated this 1195-acre wilderness in 1990. Part of the River to River Trail.',
     location: 'Panther Den Wilderness',
     distance: '30 min drive',
-    image: 'https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=800&q=80',
+    image: '/images/attractions/panther-den.jpg',
     highlights: ['Wilderness Area', 'River to River Trail', 'Magical Den'],
   },
   {
@@ -261,7 +261,7 @@ export const attractions: Attraction[] = [
     description: 'Walk through "Fat Man\'s Squeeze" and view Native American etchings in the "Giants." Home to the famous Giant City Streets - huge sandstone bluffs formed 12,000 years ago. Don\'t miss the lodge for fried chicken!',
     location: 'Giant City State Park',
     distance: '25 min drive',
-    image: 'https://images.unsplash.com/photo-1448375240586-882707db888b?w=800&q=80',
+    image: '/images/attractions/giant-city-trail.jpg',
     highlights: ['Fat Man\'s Squeeze', 'Native American Etchings', 'Historic Lodge'],
     website: 'https://dnr.illinois.gov/parks/park.giantcity.html',
     phone: '(618) 457-4836',
@@ -275,7 +275,7 @@ export const attractions: Attraction[] = [
     description: 'Don\'t forget to pet our friend the giant troll face that guards the bridge! The first half (starting opposite the pavilion) is the best - the rest is great exercise.',
     location: 'Giant City State Park',
     distance: '25 min drive',
-    image: 'https://images.unsplash.com/photo-1469474968028-56623f02e42e?w=800&q=80',
+    image: '/images/attractions/giant-city-trail.jpg',
     highlights: ['Troll Face Rock', 'Bridge Views', 'Great Exercise'],
   },
   {
@@ -287,7 +287,7 @@ export const attractions: Attraction[] = [
     description: 'Home to the State Champion Cherry Bark Oak! Experience diverse wetlands and over 100 endangered species among Cache River Wetlands. Don\'t miss the Wetlands Center or ecotour canoe trips!',
     location: 'Cache River Wetlands',
     distance: '35 min drive',
-    image: 'https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?w=800&q=80',
+    image: '/images/attractions/heron-pond.jpg',
     highlights: ['Champion Oak Tree', 'Wetlands', 'Canoe Tours'],
   },
   {
@@ -299,7 +299,7 @@ export const attractions: Attraction[] = [
     description: 'Perfect way to explore Giant City\'s protected habitat. Winds along a shaded path with towering sandstone bluffs. Great for birdwatching - spot Pileated Woodpeckers and Carolina Wrens!',
     location: 'Giant City State Park',
     distance: '25 min drive',
-    image: 'https://images.unsplash.com/photo-1447752875215-b2761acb3c5d?w=800&q=80',
+    image: '/images/attractions/rim-rock.jpg',
     highlights: ['Birdwatching', 'Sandstone Bluffs', 'Shaded Path'],
   },
   {
@@ -311,7 +311,7 @@ export const attractions: Attraction[] = [
     description: 'Panoramic views of the Mississippi River valley and Big Muddy bottomlands. LaRue-Pine Hills is one of the most unique areas in the world. The 5-mile bluffs near Route 3 are very impressive.',
     location: 'LaRue-Pine Hills',
     distance: '35 min drive',
-    image: 'https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800&q=80',
+    image: '/images/attractions/inspiration-point.jpg',
     highlights: ['Mississippi River Views', 'Unique Geology', 'Scenic Drive'],
   },
   {
@@ -323,7 +323,7 @@ export const attractions: Attraction[] = [
     description: 'Short but powerful hike! A 90-foot arch spanning a rocky ravine - the second largest natural span in Illinois. The 0.35-mile CCC-built trail features seasonal waterfalls, caves, and a walk across the arch.',
     location: 'Pomona, IL',
     distance: '25 min drive',
-    image: 'https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=800&q=80',
+    image: '/images/attractions/pomona-bridge.jpg',
     highlights: ['Natural Bridge', '0.35 Mile Loop', 'Seasonal Waterfalls'],
   },
   {
@@ -335,7 +335,7 @@ export const attractions: Attraction[] = [
     description: 'PREMIERE HIKE! A 3.6-mile loop with drastic elevation changes (350-700 ft). Features majestic bluffs, seasonal waterfalls, and panoramic views of the canyon, Big Muddy River, and Fountain Bluff.',
     location: 'Murphysboro, IL',
     distance: '30 min drive',
-    image: 'https://images.unsplash.com/photo-1469474968028-56623f02e42e?w=800&q=80',
+    image: '/images/attractions/little-grand-canyon.jpg',
     highlights: ['3.6 Mile Loop', 'Canyon Views', 'Seasonal Waterfalls'],
     website: 'https://www.shawneeforest.com/',
   },
@@ -348,7 +348,7 @@ export const attractions: Attraction[] = [
     description: 'Tip: Drive LaRue-Pine Hills on the way for scenic views! This 6.2-mile moderately challenging loop near Jonesboro is great for birding, camping, and hiking. Dogs welcome on leash.',
     location: 'Jonesboro, IL',
     distance: '35 min drive',
-    image: 'https://images.unsplash.com/photo-1473773508845-188df298d2d1?w=800&q=80',
+    image: '/images/attractions/trail-of-tears.jpg',
     highlights: ['6.2 Mile Loop', 'Birding', 'Dog Friendly'],
   },
   {
@@ -360,7 +360,7 @@ export const attractions: Attraction[] = [
     description: 'A loop around Cedar Lake with an optional out-and-back to Makanda. Part of the River to River trail. Multi-use trail shared with hikers and occasional equestrians.',
     location: 'Cedar Lake',
     distance: '30 min drive',
-    image: 'https://images.unsplash.com/photo-1447752875215-b2761acb3c5d?w=800&q=80',
+    image: '/images/attractions/cove-hollow.jpg',
     highlights: ['Cedar Lake Loop', 'River to River Trail', 'Multi-Use'],
   },
   // ADVENTURES
@@ -373,7 +373,7 @@ export const attractions: Attraction[] = [
     description: 'Illinois\' first entirely tree-based, eco-friendly zip line canopy tour on 83 wooded acres. Eight zip lines (longest 1,100 ft), 11 platforms, three aerial suspension bridges (longest 180 ft), and ground hikes.',
     location: 'Shawnee National Forest',
     distance: '45 min drive',
-    image: 'https://images.unsplash.com/photo-1504280390367-361c6d9f38f4?w=800&q=80',
+    image: '/images/attractions/shawnee-bluffs-canopy.jpg',
     highlights: ['Zip Lines', 'Aerial Bridges', 'Tree Platforms'],
   },
   {
@@ -397,7 +397,7 @@ export const attractions: Attraction[] = [
     description: 'Affordable and enjoyable horse rides for all skill levels. Host of Specialized Equine Services for equine therapy. Reservations recommended for larger groups.',
     location: 'Giant City State Park',
     distance: '25 min drive',
-    image: 'https://images.unsplash.com/photo-1469474968028-56623f02e42e?w=800&q=80',
+    image: '/images/attractions/horseback-riding.jpg',
     highlights: ['Horseback Riding', 'All Skill Levels', 'Equine Therapy'],
   },
   {
@@ -433,7 +433,7 @@ export const attractions: Attraction[] = [
     description: 'Woman-ran horseback riding ranch and campground. Try the half-day ride to Shotgun Eddy\'s for lunch/dinner with pickup! If you aren\'t used to riding, 3 hours is plenty.',
     location: 'Shawnee National Forest',
     distance: '40 min drive',
-    image: 'https://images.unsplash.com/photo-1473773508845-188df298d2d1?w=800&q=80',
+    image: '/images/attractions/horseback-riding.jpg',
     highlights: ['Trail Rides', 'Shotgun Eddy\'s Trip', 'Campground'],
   },
   {
@@ -530,7 +530,7 @@ export const attractions: Attraction[] = [
     description: 'Awe-inspiring spiritual monument with a 360-degree view of the Shawnee National Forest. Can\'t miss stop location for people of all ages, cultures, and backgrounds.',
     location: 'Alto Pass, IL',
     distance: '30 min drive',
-    image: 'https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800&q=80',
+    image: '/images/attractions/garden-of-the-gods.jpg',
     highlights: ['360° Views', 'Spiritual Monument', 'Landmark'],
   },
   {
