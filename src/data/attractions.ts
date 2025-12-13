@@ -1,9 +1,9 @@
-export type Category = 'all' | 'food' | 'lake' | 'outdoors' | 'rainy' | 'wineries' | 'thingstodo' | 'essentials';
+export type Category = 'all' | 'food' | 'lake' | 'outdoors' | 'rainy' | 'wineries' | 'thingstodo' | 'shopping';
 export type Region = 'west' | 'central' | 'east';
 export type FoodSubcategory = 'breakfast' | 'lunch' | 'datenight' | 'sweets';
 export type WinerySubcategory = 'winery' | 'brewery' | 'distillery' | 'shuttle';
 export type LakeSubcategory = 'about' | 'rentals' | 'marinas';
-export type OutdoorsSubcategory = 'waterfalls' | 'hiking' | 'adventures' | 'sightseeing' | 'swimming' | 'fishing' | 'golf';
+export type OutdoorsSubcategory = 'waterfalls' | 'hiking' | 'adventures' | 'sightseeing' | 'swimming' | 'fishing' | 'golf' | 'orchards';
 
 export interface Attraction {
   id: string;
@@ -56,6 +56,7 @@ export const outdoorsSubcategories: { id: OutdoorsSubcategory | 'all'; label: st
   { id: 'swimming', label: 'Swimming', icon: 'Waves' },
   { id: 'fishing', label: 'Fishing', icon: 'Fish' },
   { id: 'golf', label: 'Golf', icon: 'Flag' },
+  { id: 'orchards', label: 'Orchards', icon: 'Apple' },
 ];
 
 export const categories: { id: Category; label: string; icon: string }[] = [
@@ -64,7 +65,7 @@ export const categories: { id: Category; label: string; icon: string }[] = [
   { id: 'outdoors', label: 'The Great Outdoors', icon: 'Mountain' },
   { id: 'lake', label: 'Lake of Egypt', icon: 'Waves' },
   { id: 'thingstodo', label: 'Things to Do', icon: 'Ticket' },
-  { id: 'essentials', label: 'Essentials', icon: 'ShoppingBag' },
+  { id: 'shopping', label: 'Shopping', icon: 'ShoppingBag' },
   { id: 'rainy', label: 'Rainy Day Fun', icon: 'CloudRain' },
 ];
 
@@ -370,6 +371,7 @@ export const attractions: Attraction[] = [
     distance: '45 min drive',
     image: '/images/attractions/shawnee-bluffs-canopy.jpg',
     highlights: ['Zip Lines', 'Aerial Bridges', 'Tree Platforms'],
+    website: 'https://shawneebluffs.com/',
   },
   {
     id: 'rolling-oak-alpaca',
@@ -382,6 +384,7 @@ export const attractions: Attraction[] = [
     distance: '30 min drive',
     image: 'https://images.unsplash.com/photo-1448375240586-882707db888b?w=800&q=80',
     highlights: ['Alpaca Tours', 'Barn Boutique', 'Family Friendly'],
+    website: 'https://rollingoakalpacas.com/',
   },
   {
     id: 'giant-city-stables',
@@ -394,6 +397,7 @@ export const attractions: Attraction[] = [
     distance: '25 min drive',
     image: '/images/attractions/horseback-riding.jpg',
     highlights: ['Horseback Riding', 'All Skill Levels', 'Equine Therapy'],
+    website: 'https://giantcitystables.com/',
   },
   {
     id: 'castle-park',
@@ -406,6 +410,7 @@ export const attractions: Attraction[] = [
     distance: '15 min drive',
     image: 'https://images.unsplash.com/photo-1447752875215-b2761acb3c5d?w=800&q=80',
     highlights: ['Wooden Castle', 'Family Fun', 'Unique Playground'],
+    website: 'https://marionparks.com/parks-facilities/castlepark/',
   },
   {
     id: 'cache-bayou-outfitters',
@@ -430,6 +435,7 @@ export const attractions: Attraction[] = [
     distance: '40 min drive',
     image: '/images/attractions/horseback-riding.jpg',
     highlights: ['Trail Rides', 'Shotgun Eddy\'s Trip', 'Campground'],
+    website: 'https://bearbranch.com/',
   },
   {
     id: 'ray-fosse-park',
@@ -442,6 +448,7 @@ export const attractions: Attraction[] = [
     distance: '10 min drive',
     image: 'https://images.unsplash.com/photo-1447752875215-b2761acb3c5d?w=800&q=80',
     highlights: ['Aquatic Center', 'Putt-Putt Golf', 'All-Abilities Playground'],
+    website: 'https://marionparks.com/parks-facilities/ray-fosse-park/',
   },
   {
     id: 'thrillville',
@@ -454,6 +461,7 @@ export const attractions: Attraction[] = [
     distance: '10 min drive',
     image: 'https://images.unsplash.com/photo-1504280390367-361c6d9f38f4?w=800&q=80',
     highlights: ['Baseball Games', 'Concerts', 'Family Night Out'],
+    website: 'https://southernillinoisthrillbillies.com/',
   },
   {
     id: 'kokopelli-golf',
@@ -466,6 +474,7 @@ export const attractions: Attraction[] = [
     distance: '15 min drive',
     image: 'https://images.unsplash.com/photo-1469474968028-56623f02e42e?w=800&q=80',
     highlights: ['Top 100 Course', 'Pro Shop', 'Practice Facility'],
+    website: 'https://kokopelligolf.com/',
   },
   {
     id: 'golconda-marina-rentals',
@@ -478,6 +487,7 @@ export const attractions: Attraction[] = [
     distance: '50 min drive',
     image: 'https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?w=800&q=80',
     highlights: ['Pontoon Rentals', 'Ohio River', 'Scenic Views'],
+    website: 'https://golcondamarina.com/',
   },
   {
     id: 'lake-stride-watersports',
@@ -490,6 +500,7 @@ export const attractions: Attraction[] = [
     distance: '30 min drive',
     image: 'https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?w=800&q=80',
     highlights: ['Boat Rentals', 'Kayaks', 'Water Sports'],
+    website: 'https://lakestridewatersports.com/',
   },
   {
     id: 'white-crane-canoe',
@@ -502,6 +513,7 @@ export const attractions: Attraction[] = [
     distance: '35 min drive',
     image: 'https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=800&q=80',
     highlights: ['Guided Tours', 'Ancient Cypress Trees', 'Educational'],
+    website: 'https://whitecranecanoe.com/',
   },
   {
     id: 'siuc-base-camp',
@@ -514,8 +526,8 @@ export const attractions: Attraction[] = [
     distance: '20 min drive',
     image: 'https://images.unsplash.com/photo-1448375240586-882707db888b?w=800&q=80',
     highlights: ['Budget Friendly', 'Gear Rentals', 'Weekly Rates'],
+    website: 'https://campusrec.siu.edu/programs/outdoor-pursuits/adventure-resource-center/',
   },
-  // SIGHTSEEING
   {
     id: 'bald-knob-cross',
     name: 'Bald Knob Cross of Peace',
@@ -527,6 +539,7 @@ export const attractions: Attraction[] = [
     distance: '30 min drive',
     image: '/images/attractions/garden-of-the-gods.jpg',
     highlights: ['360° Views', 'Spiritual Monument', 'Landmark'],
+    website: 'https://baldknobcross.com/',
   },
   {
     id: 'cache-river-wetlands-center',
@@ -539,6 +552,7 @@ export const attractions: Attraction[] = [
     distance: '35 min drive',
     image: 'https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?w=800&q=80',
     highlights: ['Exhibits', 'Wildlife Viewing', 'Educational'],
+    website: 'https://www2.illinois.gov/dnr/parks/pages/cacheriverwetlands.aspx',
   },
   {
     id: 'cave-in-rock-ferry',
@@ -551,6 +565,7 @@ export const attractions: Attraction[] = [
     distance: '55 min drive',
     image: 'https://images.unsplash.com/photo-1469474968028-56623f02e42e?w=800&q=80',
     highlights: ['River Ferry', 'Kentucky Trip', 'Scenic Ride'],
+    website: 'https://idot.illinois.gov/travel-information/getting-around/waterway-services/ferries.html',
   },
   {
     id: 'makanda-boardwalk',
@@ -563,6 +578,7 @@ export const attractions: Attraction[] = [
     distance: '25 min drive',
     image: 'https://images.unsplash.com/photo-1447752875215-b2761acb3c5d?w=800&q=80',
     highlights: ['Artisan Shops', 'Coffee & Ice Cream', 'Unique Town'],
+    website: 'https://villageofmakanda.com/',
   },
   {
     id: 'giant-city-lodge',
@@ -575,6 +591,7 @@ export const attractions: Attraction[] = [
     distance: '25 min drive',
     image: '/images/attractions/giant-city-lodge.jpg',
     highlights: ['Historic Lodge', 'Famous Fried Chicken', 'Water Tower Views'],
+    website: 'https://giantcitylodge.com/',
   },
   {
     id: 'trigg-tower',
@@ -587,6 +604,7 @@ export const attractions: Attraction[] = [
     distance: '45 min drive',
     image: 'https://images.unsplash.com/photo-1473773508845-188df298d2d1?w=800&q=80',
     highlights: ['Historic Tower', 'Forest Views', 'Climb It'],
+    website: 'https://www.fs.usda.gov/recarea/shawnee/recarea/?recid=10702',
   },
   {
     id: 'san-damiano-shrine',
@@ -599,6 +617,7 @@ export const attractions: Attraction[] = [
     distance: '50 min drive',
     image: 'https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800&q=80',
     highlights: ['35ft Statue', 'Ohio River Bluff', 'Spiritual Site'],
+    website: 'https://sandamianoretreat.org/',
   },
   {
     id: 'illinois-iron-furnace',
@@ -611,6 +630,7 @@ export const attractions: Attraction[] = [
     distance: '45 min drive',
     image: 'https://images.unsplash.com/photo-1448375240586-882707db888b?w=800&q=80',
     highlights: ['National Historic Site', 'Fishing Holes', 'Trail Walk'],
+    website: 'https://www.fs.usda.gov/recarea/shawnee/recarea/?recid=10698',
   },
   {
     id: 'eagle-house-lighthouse',
@@ -623,6 +643,7 @@ export const attractions: Attraction[] = [
     distance: '40 min drive',
     image: 'https://images.unsplash.com/photo-1473773508845-188df298d2d1?w=800&q=80',
     highlights: ['Lighthouse', 'Observation Deck', 'Chapel'],
+    website: 'https://eaglehouseministries.org/',
   },
   {
     id: 'cliff-view-park',
@@ -635,6 +656,7 @@ export const attractions: Attraction[] = [
     distance: '30 min drive',
     image: 'https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800&q=80',
     highlights: ['Scenic Overlook', 'Bald Knob Views', 'All Seasons'],
+    website: 'https://visitsi.com/destination-item/cliff-view-park/',
   },
   {
     id: 'marion-mural-walk',
@@ -647,6 +669,7 @@ export const attractions: Attraction[] = [
     distance: '10 min drive',
     image: 'https://images.unsplash.com/photo-1447752875215-b2761acb3c5d?w=800&q=80',
     highlights: ['25+ Murals', 'Instagrammable', 'Local Shopping'],
+    website: 'https://visitsi.com/destination-item/marion-mural-walk/',
   },
   {
     id: 'mandala-gardens',
@@ -659,6 +682,7 @@ export const attractions: Attraction[] = [
     distance: '25 min drive',
     image: 'https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=800&q=80',
     highlights: ['7 Acres', 'Garden Paradise', 'Events Welcome'],
+    website: 'https://mandalagardens.org/',
   },
   // SWIMMING
   {
@@ -1824,5 +1848,22 @@ export const attractions: Attraction[] = [
     location: 'Various Locations',
     image: 'https://images.unsplash.com/photo-1544161515-4ab6ce6db874?w=800&q=80',
     highlights: ['Massage', 'Facials', 'Relaxation'],
+  },
+
+  // SHOPPING / ORCHARDS
+  {
+    id: 'rendleman-orchards',
+    name: 'Rendleman Orchards',
+    category: ['shopping', 'outdoors', 'food'],
+    region: 'west',
+    outdoorsSubcategory: ['orchards'],
+    foodSubcategory: ['sweets'],
+    description: 'A family-owned farm featuring fresh-picked apples, peaches, and seasonal produce. Visit the farm market for apple cider, baked goods, and local treats. A true Southern Illinois farm experience!',
+    location: 'Alto Pass, IL',
+    distance: '30 min drive',
+    image: 'https://images.unsplash.com/photo-1570913149827-d2ac84ab3f9a?w=800&q=80',
+    highlights: ['Fresh Apples & Peaches', 'Farm Market', 'Apple Cider', 'Baked Goods'],
+    website: 'https://rendlemanorchards.com/',
+    phone: '(618) 893-2771',
   },
 ];
