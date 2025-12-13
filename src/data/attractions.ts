@@ -831,6 +831,7 @@ export const attractions: Attraction[] = [
     distance: '10 min drive',
     image: '/images/attractions/lake-egypt-fishing.png',
     highlights: ['Bass Fishing', 'Crappie & Catfish', 'Clear Water'],
+    website: 'https://www.sipower.org/lake-of-egypt/',
   },
   {
     id: 'lake-egypt-map-rules',
@@ -856,6 +857,7 @@ export const attractions: Attraction[] = [
     distance: '15 min drive',
     image: '/images/attractions/big-worms-rides.png',
     highlights: ['Pontoon Rentals', 'Jet Ski Rentals', 'Swim Mat Rentals'],
+    website: 'https://www.facebook.com/bigwormsrides/',
     phone: '(618) 889-1573',
   },
   {
@@ -869,6 +871,7 @@ export const attractions: Attraction[] = [
     distance: '10 min drive',
     image: '/images/attractions/wiener-rides.jpg',
     highlights: ['Pontoon Rentals', 'Dock Delivery', 'Weekly Options'],
+    website: 'https://www.facebook.com/wienerrides/',
     phone: '(618) 922-0649',
   },
   {
@@ -882,6 +885,7 @@ export const attractions: Attraction[] = [
     distance: '10 min drive',
     image: '/images/attractions/experience-llc.png',
     highlights: ['Pontoon Rentals', 'Docked & Ready', 'Family Friendly'],
+    website: 'https://www.facebook.com/TheExperienceLLC/',
     phone: '(618) 579-9783',
   },
   {
@@ -895,6 +899,7 @@ export const attractions: Attraction[] = [
     distance: '10 min drive',
     image: '/images/attractions/macks-marina.png',
     highlights: ['Paddle Board Rentals', 'Pontoon Rentals', 'Online Booking'],
+    website: 'https://www.facebook.com/macksmarinaLOE/',
   },
   // MARINAS
   {
@@ -922,6 +927,7 @@ export const attractions: Attraction[] = [
     distance: '10 min drive',
     image: '/images/attractions/pyramid-acres-marina.jpg',
     highlights: ['Live Bands', 'Full Bar', 'Fuel Station', 'Food Trucks'],
+    website: 'https://www.facebook.com/pyramidacresmarina/',
   },
   {
     id: 'cross-eyed-bear',
@@ -947,6 +953,7 @@ export const attractions: Attraction[] = [
     distance: '10 min drive',
     image: '/images/attractions/lake-egypt-swimming.png',
     highlights: ['Clear Water', 'Family Friendly', 'Scenic Views'],
+    website: 'https://www.sipower.org/lake-of-egypt/',
   },
 
   // WINERIES & ADULT BEVERAGES
@@ -1121,6 +1128,7 @@ export const attractions: Attraction[] = [
     distance: '30 min drive',
     image: '/images/attractions/havisham-bourbon.jpg',
     highlights: ['Signature Bourbon', 'Full Bar', 'Wine Trail Location'],
+    website: 'https://www.facebook.com/havishambourbonbar/',
   },
   {
     id: 'buckwater-brew',
@@ -1133,6 +1141,7 @@ export const attractions: Attraction[] = [
     distance: '15 min drive',
     image: '/images/attractions/buckwater-brew.jpg',
     highlights: ['300+ Whiskeys', 'Craft Beer', 'Pub Food', 'Family Friendly'],
+    website: 'https://www.facebook.com/buckwaterbrewworks/',
   },
   {
     id: 'katy-lynn',
@@ -1145,6 +1154,7 @@ export const attractions: Attraction[] = [
     distance: '25 min drive',
     image: '/images/attractions/katy-lynn-distillery.png',
     highlights: ['Brandy', 'Rum', 'Whiskey', 'Spirit Store'],
+    website: 'https://www.facebook.com/katylynndistillery/',
   },
   {
     id: 'st-nicholas',
@@ -1849,6 +1859,7 @@ export const attractions: Attraction[] = [
     distance: '15 min drive',
     image: 'https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?w=800&q=80',
     highlights: ['Latest Movies', 'Comfortable Seating', 'Concessions'],
+    website: 'https://www.amctheatres.com/movie-theatres/marion/amc-centre-8',
   },
   {
     id: 'antiques',
@@ -1860,6 +1871,7 @@ export const attractions: Attraction[] = [
     distance: '15 min drive',
     image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&q=80',
     highlights: ['Unique Finds', 'Local Shops', 'Vintage Treasures'],
+    website: 'https://visitsi.com/destinations/?cat=shopping',
   },
   {
     id: 'spa',
@@ -1870,6 +1882,7 @@ export const attractions: Attraction[] = [
     location: 'Various Locations',
     image: 'https://images.unsplash.com/photo-1544161515-4ab6ce6db874?w=800&q=80',
     highlights: ['Massage', 'Facials', 'Relaxation'],
+    website: 'https://visitsi.com/destinations/?cat=spas',
   },
 
   // SHOPPING / ORCHARDS
