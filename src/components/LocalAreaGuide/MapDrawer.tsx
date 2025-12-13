@@ -74,112 +74,120 @@ const MapDrawer = ({ attraction, isOpen, onClose, nearbyAttractions }: MapDrawer
   };
 
   useEffect(() => {
-    if (!isOpen || !mapContainer.current || !mapboxToken || !attraction) return;
+    if (!isOpen || !mapboxToken || !attraction) return;
 
-    const coords = getCoordinates(attraction.location);
-    
-    mapboxgl.accessToken = mapboxToken;
-    
-    try {
-      map.current = new mapboxgl.Map({
-        container: mapContainer.current,
-        style: 'mapbox://styles/mapbox/outdoors-v12',
-        center: coords,
-        zoom: 10,
-        pitch: 30,
-      });
+    let initTimer: NodeJS.Timeout;
 
-      map.current.addControl(
-        new mapboxgl.NavigationControl({
-          visualizePitch: true,
-        }),
-        'top-right'
-      );
+    // Small delay to ensure the Sheet container is fully rendered
+    initTimer = setTimeout(() => {
+      if (!mapContainer.current) return;
 
-      map.current.on('load', () => {
-        setIsMapReady(true);
-        
-        // Add main attraction marker
-        const mainMarkerEl = document.createElement('div');
-        mainMarkerEl.className = 'main-marker';
-        mainMarkerEl.innerHTML = `
-          <div style="
-            width: 40px;
-            height: 40px;
-            background: linear-gradient(135deg, #2563eb, #1d4ed8);
-            border-radius: 50%;
-            border: 3px solid white;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.3);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            cursor: pointer;
-          ">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="white">
-              <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
-              <circle cx="12" cy="10" r="3" fill="#2563eb"/>
-            </svg>
-          </div>
-        `;
+      const coords = getCoordinates(attraction.location);
+      
+      mapboxgl.accessToken = mapboxToken;
+      
+      try {
+        map.current = new mapboxgl.Map({
+          container: mapContainer.current,
+          style: 'mapbox://styles/mapbox/outdoors-v12',
+          center: coords,
+          zoom: 10,
+          pitch: 30,
+        });
 
-        new mapboxgl.Marker(mainMarkerEl)
-          .setLngLat(coords)
-          .setPopup(
-            new mapboxgl.Popup({ offset: 25 }).setHTML(`
-              <div style="padding: 8px; max-width: 200px;">
-                <strong style="font-size: 14px; color: #1d4ed8;">${attraction.name}</strong>
-                <p style="margin: 4px 0 0; font-size: 12px; color: #666;">${attraction.location}</p>
-              </div>
-            `)
-          )
-          .addTo(map.current!);
+        map.current.addControl(
+          new mapboxgl.NavigationControl({
+            visualizePitch: true,
+          }),
+          'top-right'
+        );
 
-        // Add nearby attraction markers
-        nearbyAttractions.forEach((nearby, index) => {
-          const nearbyCoords = getCoordinates(nearby.location);
-          // Add slight offset to prevent overlap
-          const offset = [(Math.random() - 0.5) * 0.05, (Math.random() - 0.5) * 0.05];
+        map.current.on('load', () => {
+          setIsMapReady(true);
           
-          const markerEl = document.createElement('div');
-          markerEl.innerHTML = `
+          // Add main attraction marker
+          const mainMarkerEl = document.createElement('div');
+          mainMarkerEl.className = 'main-marker';
+          mainMarkerEl.innerHTML = `
             <div style="
-              width: 28px;
-              height: 28px;
-              background: #B87333;
+              width: 40px;
+              height: 40px;
+              background: linear-gradient(135deg, #2563eb, #1d4ed8);
               border-radius: 50%;
-              border: 2px solid white;
-              box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+              border: 3px solid white;
+              box-shadow: 0 4px 12px rgba(0,0,0,0.3);
               display: flex;
               align-items: center;
               justify-content: center;
               cursor: pointer;
-              font-size: 12px;
-              font-weight: bold;
-              color: white;
             ">
-              ${index + 1}
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="white">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                <circle cx="12" cy="10" r="3" fill="#2563eb"/>
+              </svg>
             </div>
           `;
 
-          new mapboxgl.Marker(markerEl)
-            .setLngLat([nearbyCoords[0] + offset[0], nearbyCoords[1] + offset[1]])
+          new mapboxgl.Marker(mainMarkerEl)
+            .setLngLat(coords)
             .setPopup(
-              new mapboxgl.Popup({ offset: 20 }).setHTML(`
-                <div style="padding: 8px; max-width: 180px;">
-                  <strong style="font-size: 13px;">${nearby.name}</strong>
-                  <p style="margin: 4px 0 0; font-size: 11px; color: #666;">${nearby.location}</p>
-                  ${nearby.distance ? `<p style="margin: 2px 0 0; font-size: 11px; color: #888;">${nearby.distance}</p>` : ''}
+              new mapboxgl.Popup({ offset: 25 }).setHTML(`
+                <div style="padding: 8px; max-width: 200px;">
+                  <strong style="font-size: 14px; color: #1d4ed8;">${attraction.name}</strong>
+                  <p style="margin: 4px 0 0; font-size: 12px; color: #666;">${attraction.location}</p>
                 </div>
               `)
             )
             .addTo(map.current!);
+
+          // Add nearby attraction markers
+          nearbyAttractions.forEach((nearby, index) => {
+            const nearbyCoords = getCoordinates(nearby.location);
+            // Add slight offset to prevent overlap
+            const offset = [(Math.random() - 0.5) * 0.05, (Math.random() - 0.5) * 0.05];
+            
+            const markerEl = document.createElement('div');
+            markerEl.innerHTML = `
+              <div style="
+                width: 28px;
+                height: 28px;
+                background: #B87333;
+                border-radius: 50%;
+                border: 2px solid white;
+                box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                cursor: pointer;
+                font-size: 12px;
+                font-weight: bold;
+                color: white;
+              ">
+                ${index + 1}
+              </div>
+            `;
+
+            new mapboxgl.Marker(markerEl)
+              .setLngLat([nearbyCoords[0] + offset[0], nearbyCoords[1] + offset[1]])
+              .setPopup(
+                new mapboxgl.Popup({ offset: 20 }).setHTML(`
+                  <div style="padding: 8px; max-width: 180px;">
+                    <strong style="font-size: 13px;">${nearby.name}</strong>
+                    <p style="margin: 4px 0 0; font-size: 11px; color: #666;">${nearby.location}</p>
+                    ${nearby.distance ? `<p style="margin: 2px 0 0; font-size: 11px; color: #888;">${nearby.distance}</p>` : ''}
+                  </div>
+                `)
+              )
+              .addTo(map.current!);
+          });
         });
-      });
-    } catch (error) {
-      console.error('Map initialization error:', error);
-    }
+      } catch (error) {
+        console.error('Map initialization error:', error);
+      }
+    }, 100);
 
     return () => {
+      clearTimeout(initTimer);
       map.current?.remove();
       setIsMapReady(false);
     };
@@ -262,8 +270,12 @@ const MapDrawer = ({ attraction, isOpen, onClose, nearbyAttractions }: MapDrawer
           ) : (
             <>
               {/* Map Container */}
-              <div className="relative flex-1">
-                <div ref={mapContainer} className="absolute inset-0" />
+              <div className="relative flex-1 min-h-[300px]">
+                <div 
+                  ref={mapContainer} 
+                  className="absolute inset-0 w-full h-full"
+                  style={{ minHeight: '300px' }}
+                />
                 
                 {/* Custom Zoom Controls */}
                 <div className="absolute bottom-4 left-4 flex flex-col gap-2 z-10">
