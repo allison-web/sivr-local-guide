@@ -59,7 +59,6 @@ export const outdoorsSubcategories: { id: OutdoorsSubcategory | 'all'; label: st
 ];
 
 export const categories: { id: Category; label: string; icon: string }[] = [
-  { id: 'all', label: 'All', icon: 'Compass' },
   { id: 'food', label: 'Food + Beverage', icon: 'UtensilsCrossed' },
   { id: 'wineries', label: 'Wineries & Adult Beverages', icon: 'Wine' },
   { id: 'outdoors', label: 'The Great Outdoors', icon: 'Mountain' },
@@ -82,6 +81,7 @@ export const attractions: Attraction[] = [
     distance: '20 min drive',
     image: '/images/attractions/big-rocky-hollow.jpg',
     highlights: ['100 Foot Falls', 'Easy Walk', 'Year-Round Beauty'],
+    website: 'https://www.alltrails.com/trail/us/illinois/big-rocky-hollow-trail',
   },
   {
     id: 'bork-falls',
@@ -94,6 +94,7 @@ export const attractions: Attraction[] = [
     distance: '25 min drive',
     image: '/images/attractions/bork-falls.jpg',
     highlights: ['Twin Waterfall', 'Swimming Hole', '4WD Recommended'],
+    website: 'https://www.alltrails.com/trail/us/illinois/bork-falls-trail',
   },
   {
     id: 'jackson-falls',
@@ -106,6 +107,7 @@ export const attractions: Attraction[] = [
     distance: '40 min drive',
     image: '/images/attractions/jackson-falls.jpg',
     highlights: ['Instagrammable', 'Adventure Hike', 'Swimming'],
+    website: 'https://www.alltrails.com/trail/us/illinois/jackson-falls',
   },
   {
     id: 'kinkaid-spillway',
@@ -118,6 +120,7 @@ export const attractions: Attraction[] = [
     distance: '30 min drive',
     image: '/images/attractions/kinkaid-spillway.jpg',
     highlights: ['Swimming', 'Multi-Layer Waterfall', 'Easy Access'],
+    website: 'https://www.alltrails.com/trail/us/illinois/kinkaid-lake-spillway',
   },
   {
     id: 'dixon-springs-waterfall',
@@ -130,6 +133,7 @@ export const attractions: Attraction[] = [
     distance: '50 min drive',
     image: '/images/attractions/dixon-springs.jpg',
     highlights: ['Canyons', 'Waterfalls', 'Photo Ops'],
+    website: 'https://www.alltrails.com/trail/us/illinois/dixon-springs-state-park-trail',
   },
   // HIKING
   {
@@ -143,7 +147,7 @@ export const attractions: Attraction[] = [
     distance: '35 min drive',
     image: '/images/attractions/garden-of-the-gods.jpg',
     highlights: ['Observation Trail', 'Sunrise/Sunset Views', 'Photography Paradise'],
-    website: 'https://www.fs.usda.gov/recarea/shawnee/recarea/?recid=10680',
+    website: 'https://www.alltrails.com/trail/us/illinois/garden-of-the-gods-observation-trail',
   },
   {
     id: 'rim-rock',
@@ -156,6 +160,7 @@ export const attractions: Attraction[] = [
     distance: '40 min drive',
     image: '/images/attractions/rim-rock.png',
     highlights: ['National Recreation Trail', 'Spring Flowers', 'Scenic Views'],
+    website: 'https://www.alltrails.com/trail/us/illinois/rim-rock-recreational-trail',
   },
   {
     id: 'lusk-creek',
@@ -168,6 +173,7 @@ export const attractions: Attraction[] = [
     distance: '45 min drive',
     image: '/images/attractions/lusk-creek.jpg',
     highlights: ['Indian Kitchen', 'Wilderness', 'Kayaking'],
+    website: 'https://www.alltrails.com/trail/us/illinois/lusk-creek-canyon-nature-preserve-trail',
   },
   {
     id: 'bell-smith',
@@ -180,6 +186,7 @@ export const attractions: Attraction[] = [
     distance: '45 min drive',
     image: '/images/attractions/bell-smith-springs.jpg',
     highlights: ['Largest Natural Bridge', 'Devil\'s Backbone', 'Swimming Hole'],
+    website: 'https://www.alltrails.com/trail/us/illinois/bell-smith-springs-loop-trail',
   },
   {
     id: 'tunnel-hill',
@@ -192,6 +199,7 @@ export const attractions: Attraction[] = [
     distance: '35 min drive',
     image: '/images/attractions/tunnel-hill.png',
     highlights: ['Historic Train Tunnel', 'Bike Friendly', 'Easy Walk'],
+    website: 'https://www.alltrails.com/trail/us/illinois/tunnel-hill-state-trail',
   },
   {
     id: 'sand-cave',
@@ -204,6 +212,7 @@ export const attractions: Attraction[] = [
     distance: '40 min drive',
     image: '/images/attractions/sand-cave.png',
     highlights: ['Largest Sandstone Cave', 'Underground Railroad', 'Family Friendly'],
+    website: 'https://www.alltrails.com/trail/us/illinois/sand-cave-trail',
   },
   {
     id: 'cave-in-rock',
@@ -216,6 +225,7 @@ export const attractions: Attraction[] = [
     distance: '55 min drive',
     image: '/images/attractions/cave-in-rock.jpg',
     highlights: ['Historic Cave', 'Ohio River Views', 'Pirate History'],
+    website: 'https://www.alltrails.com/trail/us/illinois/cave-in-rock',
   },
   {
     id: 'burden-falls',
@@ -228,6 +238,7 @@ export const attractions: Attraction[] = [
     distance: '45 min drive',
     image: '/images/attractions/burden-falls.jpg',
     highlights: ['Waterfalls', 'Scenic Beauty', 'Adventure Hike'],
+    website: 'https://www.alltrails.com/trail/us/illinois/burden-falls-trail',
   },
   {
     id: 'hawks-cave',
@@ -240,6 +251,7 @@ export const attractions: Attraction[] = [
     distance: '25 min drive',
     image: '/images/attractions/hawks-cave.png',
     highlights: ['Largest Shelter Bluff', 'Boulder Climbing', 'Family Favorite'],
+    website: 'https://www.alltrails.com/trail/us/illinois/hawks-cave-trail',
   },
   {
     id: 'panther-den',
@@ -252,6 +264,7 @@ export const attractions: Attraction[] = [
     distance: '30 min drive',
     image: '/images/attractions/panther-den.png',
     highlights: ['Wilderness Area', 'River to River Trail', 'Magical Den'],
+    website: 'https://www.alltrails.com/trail/us/illinois/panther-den-wilderness-trail',
   },
   {
     id: 'giant-city',
@@ -278,6 +291,7 @@ export const attractions: Attraction[] = [
     distance: '25 min drive',
     image: '/images/attractions/round-bluff.jpg',
     highlights: ['Troll Face Rock', 'Bridge Views', 'Great Exercise'],
+    website: 'https://www.alltrails.com/trail/us/illinois/round-bluff-nature-preserve-trail',
   },
   {
     id: 'heron-pond',
@@ -290,6 +304,7 @@ export const attractions: Attraction[] = [
     distance: '35 min drive',
     image: '/images/attractions/heron-pond.png',
     highlights: ['Champion Oak Tree', 'Wetlands', 'Canoe Tours'],
+    website: 'https://www.alltrails.com/trail/us/illinois/heron-pond-trail',
   },
   {
     id: 'trillium-trail',
@@ -302,6 +317,7 @@ export const attractions: Attraction[] = [
     distance: '25 min drive',
     image: '/images/attractions/trillium-trail.png',
     highlights: ['Birdwatching', 'Sandstone Bluffs', 'Shaded Path'],
+    website: 'https://www.alltrails.com/trail/us/illinois/trillium-trail',
   },
   {
     id: 'inspiration-point',
@@ -314,6 +330,7 @@ export const attractions: Attraction[] = [
     distance: '35 min drive',
     image: '/images/attractions/inspiration-point.jpg',
     highlights: ['Mississippi River Views', 'Unique Geology', 'Scenic Drive'],
+    website: 'https://www.alltrails.com/trail/us/illinois/larue-pine-hills-trail',
   },
   {
     id: 'pomona-bridge',
@@ -326,6 +343,7 @@ export const attractions: Attraction[] = [
     distance: '25 min drive',
     image: '/images/attractions/pomona-bridge.jpg',
     highlights: ['Natural Bridge', '0.35 Mile Loop', 'Seasonal Waterfalls'],
+    website: 'https://www.alltrails.com/trail/us/illinois/pomona-natural-bridge-trail',
   },
   {
     id: 'little-grand-canyon',
@@ -338,7 +356,7 @@ export const attractions: Attraction[] = [
     distance: '30 min drive',
     image: '/images/attractions/little-grand-canyon.png',
     highlights: ['3.6 Mile Loop', 'Canyon Views', 'Seasonal Waterfalls'],
-    website: 'https://www.shawneeforest.com/',
+    website: 'https://www.alltrails.com/trail/us/illinois/little-grand-canyon-trail',
   },
   // ADVENTURES
   {
