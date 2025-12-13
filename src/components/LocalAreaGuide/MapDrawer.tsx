@@ -306,37 +306,47 @@ const MapDrawer = ({ attraction, isOpen, onClose, nearbyAttractions }: MapDrawer
                 </div>
               </div>
 
-              {/* Nearby Points of Interest */}
-              <div className="border-t bg-card p-4 max-h-[200px] overflow-y-auto">
-                <h4 className="font-semibold text-sm mb-3 text-foreground">Nearby Points of Interest</h4>
-                <div className="space-y-2">
-                  {nearbyAttractions.length > 0 ? (
-                    nearbyAttractions.slice(0, 5).map((nearby, index) => (
-                      <div 
-                        key={nearby.id}
-                        className="flex items-center gap-3 p-2 rounded-lg bg-secondary/50 hover:bg-secondary transition-colors"
+              {/* Attraction Details */}
+              <div className="border-t bg-card p-4 max-h-[250px] overflow-y-auto">
+                <h4 className="font-semibold text-sm mb-3 text-foreground">About This Location</h4>
+                <p className="text-sm text-muted-foreground leading-relaxed">
+                  {attraction?.description}
+                </p>
+                
+                {/* Highlights */}
+                {attraction?.highlights && attraction.highlights.length > 0 && (
+                  <div className="mt-4 flex flex-wrap gap-1.5">
+                    {attraction.highlights.map((highlight) => (
+                      <span
+                        key={highlight}
+                        className="rounded-md bg-secondary px-2 py-0.5 text-xs font-medium text-secondary-foreground"
                       >
-                        <span className="flex-shrink-0 w-6 h-6 rounded-full bg-sivr-copper text-white text-xs font-bold flex items-center justify-center">
-                          {index + 1}
-                        </span>
-                        <div className="flex-1 min-w-0">
-                          <p className="text-sm font-medium truncate">{nearby.name}</p>
-                          <p className="text-xs text-muted-foreground truncate">{nearby.location}</p>
-                        </div>
-                        {nearby.website && (
-                          <a
-                            href={nearby.website}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="flex-shrink-0 p-1.5 text-sivr-blue hover:text-sivr-copper transition-colors"
-                          >
-                            <ExternalLink className="h-4 w-4" />
-                          </a>
-                        )}
-                      </div>
-                    ))
-                  ) : (
-                    <p className="text-sm text-muted-foreground">No nearby attractions found.</p>
+                        {highlight}
+                      </span>
+                    ))}
+                  </div>
+                )}
+
+                {/* Actions */}
+                <div className="mt-4 flex flex-wrap items-center gap-3">
+                  {attraction?.website && (
+                    <a
+                      href={attraction.website}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center gap-1.5 text-sm font-medium text-sivr-blue transition-colors hover:text-sivr-copper"
+                    >
+                      Visit Website
+                      <ExternalLink className="h-3.5 w-3.5" />
+                    </a>
+                  )}
+                  {attraction?.phone && (
+                    <a
+                      href={`tel:${attraction.phone}`}
+                      className="inline-flex items-center gap-1.5 text-sm font-medium text-muted-foreground transition-colors hover:text-sivr-blue"
+                    >
+                      {attraction.phone}
+                    </a>
                   )}
                 </div>
               </div>
