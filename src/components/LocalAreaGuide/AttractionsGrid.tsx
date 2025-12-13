@@ -1,5 +1,5 @@
 import { useState, useMemo } from 'react';
-import { attractions, Category } from '@/data/attractions';
+import { attractions, Category, Attraction } from '@/data/attractions';
 import CategoryFilter from './CategoryFilter';
 import RegionFilter, { RegionOption } from './RegionFilter';
 import FoodSubcategoryFilter, { FoodSubcategoryOption } from './FoodSubcategoryFilter';
@@ -7,6 +7,7 @@ import WinerySubcategoryFilter, { WinerySubcategoryOption } from './WinerySubcat
 import LakeSubcategoryFilter, { LakeSubcategoryOption } from './LakeSubcategoryFilter';
 import OutdoorsSubcategoryFilter, { OutdoorsSubcategoryOption } from './OutdoorsSubcategoryFilter';
 import AttractionCard from './AttractionCard';
+import MapDrawer from './MapDrawer';
 
 const AttractionsGrid = () => {
   const [activeCategory, setActiveCategory] = useState<Category>('food');
@@ -15,6 +16,10 @@ const AttractionsGrid = () => {
   const [activeWinerySubcategory, setActiveWinerySubcategory] = useState<WinerySubcategoryOption>('all');
   const [activeLakeSubcategory, setActiveLakeSubcategory] = useState<LakeSubcategoryOption>('all');
   const [activeOutdoorsSubcategory, setActiveOutdoorsSubcategory] = useState<OutdoorsSubcategoryOption>('all');
+  
+  // Map drawer state
+  const [selectedAttraction, setSelectedAttraction] = useState<Attraction | null>(null);
+  const [isMapOpen, setIsMapOpen] = useState(false);
 
   const handleCategoryChange = (category: Category) => {
     setActiveCategory(category);
@@ -56,6 +61,27 @@ const AttractionsGrid = () => {
       return categoryMatch && regionMatch && foodSubcategoryMatch && winerySubcategoryMatch && lakeSubcategoryMatch && outdoorsSubcategoryMatch;
     });
   }, [activeCategory, activeRegion, activeFoodSubcategory, activeWinerySubcategory, activeLakeSubcategory, activeOutdoorsSubcategory]);
+
+  // Get nearby attractions based on region
+  const nearbyAttractions = useMemo(() => {
+    if (!selectedAttraction) return [];
+    return attractions
+      .filter(a => 
+        a.id !== selectedAttraction.id && 
+        a.region === selectedAttraction.region
+      )
+      .slice(0, 5);
+  }, [selectedAttraction]);
+
+  const handleMapClick = (attraction: Attraction) => {
+    setSelectedAttraction(attraction);
+    setIsMapOpen(true);
+  };
+
+  const handleMapClose = () => {
+    setIsMapOpen(false);
+    setTimeout(() => setSelectedAttraction(null), 300);
+  };
 
   return (
     <section className="bg-background py-12 sm:py-16">
@@ -140,6 +166,7 @@ const AttractionsGrid = () => {
               key={attraction.id}
               attraction={attraction}
               index={index}
+              onMapClick={handleMapClick}
             />
           ))}
         </div>
@@ -153,6 +180,14 @@ const AttractionsGrid = () => {
           </div>
         )}
       </div>
+
+      {/* Map Drawer */}
+      <MapDrawer
+        attraction={selectedAttraction}
+        isOpen={isMapOpen}
+        onClose={handleMapClose}
+        nearbyAttractions={nearbyAttractions}
+      />
     </section>
   );
 };
