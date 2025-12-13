@@ -14,6 +14,8 @@ const categoryLabels: Record<string, string> = {
   outdoors: 'Great Outdoors',
   rainy: 'Rainy Day Fun',
   wineries: 'Wineries',
+  shopping: 'Shopping',
+  thingstodo: 'Things to Do',
 };
 
 const regionLabels: Record<Region, string> = {
