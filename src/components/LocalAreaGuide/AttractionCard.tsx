@@ -1,11 +1,12 @@
 import { useState } from 'react';
-import { MapPin, Clock, ExternalLink, Phone, Navigation } from 'lucide-react';
+import { MapPin, Clock, ExternalLink, Phone, Navigation, Map } from 'lucide-react';
 import { Attraction, Region } from '@/data/attractions';
 import { cn } from '@/lib/utils';
 
 interface AttractionCardProps {
   attraction: Attraction;
   index: number;
+  onMapClick: (attraction: Attraction) => void;
 }
 
 const categoryLabels: Record<string, string> = {
@@ -24,7 +25,7 @@ const regionLabels: Record<Region, string> = {
   east: 'East',
 };
 
-const AttractionCard = ({ attraction, index }: AttractionCardProps) => {
+const AttractionCard = ({ attraction, index, onMapClick }: AttractionCardProps) => {
   const [isExpanded, setIsExpanded] = useState(false);
 
   return (
@@ -36,7 +37,10 @@ const AttractionCard = ({ attraction, index }: AttractionCardProps) => {
       style={{ animationDelay: `${index * 50}ms` }}
     >
       {/* Image */}
-      <div className="relative h-48 sm:h-52 overflow-hidden">
+      <div 
+        className="relative h-48 sm:h-52 overflow-hidden cursor-pointer"
+        onClick={() => onMapClick(attraction)}
+      >
         <img
           src={attraction.image}
           alt={attraction.name}
@@ -44,6 +48,13 @@ const AttractionCard = ({ attraction, index }: AttractionCardProps) => {
           loading="lazy"
         />
         <div className="absolute inset-0 bg-gradient-to-t from-foreground/60 via-transparent to-transparent" />
+        
+        {/* Map Icon Overlay */}
+        <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-foreground/20">
+          <div className="bg-card/90 backdrop-blur-sm rounded-full p-3 shadow-lg transform scale-90 group-hover:scale-100 transition-transform duration-300">
+            <Map className="h-6 w-6 text-sivr-blue" />
+          </div>
+        </div>
         
         {/* Category Badge */}
         <span className="absolute left-3 top-3 rounded-full bg-card/90 px-2.5 py-1 text-xs font-medium text-foreground backdrop-blur-sm">
@@ -127,6 +138,13 @@ const AttractionCard = ({ attraction, index }: AttractionCardProps) => {
               {attraction.phone}
             </a>
           )}
+          <button
+            onClick={() => onMapClick(attraction)}
+            className="inline-flex items-center gap-1.5 text-xs sm:text-sm font-medium text-muted-foreground transition-colors hover:text-sivr-blue ml-auto"
+          >
+            <Map className="h-3 w-3 sm:h-3.5 sm:w-3.5" />
+            View Map
+          </button>
         </div>
       </div>
     </article>
