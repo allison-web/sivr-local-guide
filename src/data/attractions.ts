@@ -909,6 +909,7 @@ export const attractions: Attraction[] = [
     distance: '15 min drive',
     image: '/images/attractions/marion-koa.png',
     highlights: ['Water Park', 'Full Bar', 'Food & Ice Cream'],
+    website: 'https://koa.com/campgrounds/marion/',
   },
   {
     id: 'pyramid-acres-marina',
@@ -933,6 +934,7 @@ export const attractions: Attraction[] = [
     distance: '10 min drive',
     image: 'https://images.unsplash.com/photo-1514933651103-005eec06c04b?w=800&q=80',
     highlights: ['Crab Legs Thursdays', 'Gastropub', 'Live Concerts'],
+    website: 'https://www.facebook.com/TheCrossEyedBear/',
   },
   {
     id: 'lake-swimming',
@@ -1235,6 +1237,7 @@ export const attractions: Attraction[] = [
     distance: '25 min drive',
     image: '/images/attractions/blend-tea.png',
     highlights: ['Sweet & Savory Crepes', 'Custom Drinks', 'Near SIU Campus'],
+    website: 'https://www.facebook.com/BlendTeaandCrepeLounge/',
     phone: '(618) 319-1441',
   },
   {
@@ -1276,6 +1279,7 @@ export const attractions: Attraction[] = [
     distance: '25 min drive',
     image: '/images/attractions/branch-cafe.png',
     highlights: ['Vegetarian', 'Fresh Baked Goods', 'Large Outdoor Patio'],
+    website: 'https://www.facebook.com/profile.php?id=100063579412393',
     phone: '(618) 529-4777',
   },
   {
@@ -1302,6 +1306,7 @@ export const attractions: Attraction[] = [
     distance: '25 min drive',
     image: '/images/attractions/mary-lous-grill.png',
     highlights: ['Famous Biscuits & Gravy', 'Counter Seating', 'Classic Diner'],
+    website: 'https://www.facebook.com/MaryLousGrill/',
     phone: '(618) 457-5084',
   },
   {
@@ -1329,6 +1334,7 @@ export const attractions: Attraction[] = [
     distance: '15 min drive',
     image: '/images/attractions/vault-cafe.jpg',
     highlights: ['Historic Bank Building', 'On the Square', 'Friendly Service'],
+    website: 'https://www.facebook.com/thevaultcafeandmarket/',
     phone: '(618) 993-9010',
   },
   {
@@ -1358,6 +1364,7 @@ export const attractions: Attraction[] = [
     distance: '45 min drive',
     image: 'https://images.unsplash.com/photo-1514933651103-005eec06c04b?w=800&q=80',
     highlights: ['Large Portions', 'Homemade Meals', 'Kitschy Vibe'],
+    website: 'https://www.facebook.com/diverdowngolconda/',
   },
   {
     id: 'ma-filipino',
@@ -1370,6 +1377,7 @@ export const attractions: Attraction[] = [
     distance: '15 min drive',
     image: '/images/attractions/ma-filipino.jpg',
     highlights: ['Authentic Filipino', 'Fresh & Colorful', 'Sample Menu Items'],
+    website: 'https://www.facebook.com/MAFilipinoCuisine/',
   },
   {
     id: 'big-blues-que',
@@ -1382,6 +1390,7 @@ export const attractions: Attraction[] = [
     distance: '20 min drive',
     image: 'https://images.unsplash.com/photo-1529193591184-b1d58069ecdd?w=800&q=80',
     highlights: ['Baby Back Ribs', 'Grab-and-Go', 'Lines Down the Block'],
+    website: 'https://www.facebook.com/bigbluesque/',
   },
   {
     id: 'taqueria-pequena',
@@ -1394,6 +1403,7 @@ export const attractions: Attraction[] = [
     distance: '30 min drive',
     image: '/images/attractions/taqueria-pequena.jpg',
     highlights: ['Best Tamales', 'Authentic Mexican', 'Local Gem'],
+    website: 'https://www.facebook.com/taqueriapequena/',
   },
   {
     id: 'pookies',
@@ -1406,6 +1416,7 @@ export const attractions: Attraction[] = [
     distance: '15 min drive',
     image: '/images/attractions/pookies.png',
     highlights: ['Bocce Courts', 'Billiards', 'Family Friendly'],
+    website: 'https://www.facebook.com/pookiesbeerburgersbocce/',
     phone: '(618) 997-3690',
   },
   {
@@ -1432,6 +1443,7 @@ export const attractions: Attraction[] = [
     distance: '20 min drive',
     image: '/images/attractions/cummares.png',
     highlights: ['Traditional Italian', 'Family-Owned', 'Afternoon Buffet'],
+    website: 'https://www.facebook.com/Cummares/',
   },
   {
     id: 'thai-taste',
@@ -1472,6 +1484,7 @@ export const attractions: Attraction[] = [
     distance: '25 min drive',
     image: 'https://images.unsplash.com/photo-1585937421612-70a008356fbe?w=800&q=80',
     highlights: ['Authentic Indian', 'Chicken Tikka Masala', 'Garlic Naan'],
+    website: 'https://www.bombayolive.com/',
   },
   {
     id: 'italian-village',
@@ -1536,6 +1549,7 @@ export const attractions: Attraction[] = [
     distance: '10 min drive',
     image: 'https://images.unsplash.com/photo-1558030006-450675393462?w=800&q=80',
     highlights: ['Worth the Drive', 'Classic BBQ', 'Lake Location'],
+    website: 'https://www.facebook.com/profile.php?id=100063476693117',
   },
   {
     id: 'neslers',
@@ -1548,6 +1562,7 @@ export const attractions: Attraction[] = [
     distance: '20 min drive',
     image: '/images/attractions/neslers-polar-whip.png',
     highlights: ['75+ Years Family Owned', '80 Cent Burgers', 'Affordable'],
+    website: 'https://www.facebook.com/NeslersPolarWhip/',
     phone: '(618) 988-9210',
   },
   {
@@ -1575,6 +1590,7 @@ export const attractions: Attraction[] = [
     distance: '50 min drive',
     image: '/images/attractions/etown-river.png',
     highlights: ['Floating Restaurant', 'Fresh Catfish', 'Ohio River Views'],
+    website: 'https://www.facebook.com/ETownRiverRestaurant/',
     phone: '(618) 287-2333',
   },
 
@@ -1590,6 +1606,7 @@ export const attractions: Attraction[] = [
     distance: '25 min drive',
     image: '/images/attractions/global-gourmet.png',
     highlights: ['Daily Menu Changes', 'Ethnic Inspired', 'Relaxing Patio'],
+    website: 'https://www.facebook.com/GlobalGourmetCdale/',
   },
   {
     id: '20s-hideout',
@@ -1630,6 +1647,7 @@ export const attractions: Attraction[] = [
     distance: '15 min drive',
     image: '/images/attractions/the-turn.png',
     highlights: ['Golf Course Views', 'Gastro-Pub', 'Upscale'],
+    website: 'https://www.facebook.com/TheTurnRestaurantandLounge/',
   },
   {
     id: 'seasoning-bistro',
@@ -1696,6 +1714,7 @@ export const attractions: Attraction[] = [
     distance: '15 min drive',
     image: '/images/attractions/little-nashville.png',
     highlights: ['Flatbreads', 'Nashville Inspired', 'Live Entertainment'],
+    website: 'https://www.facebook.com/thelittlenashvillecafe/',
     phone: '(618) 710-6002',
   },
 
@@ -1752,6 +1771,7 @@ export const attractions: Attraction[] = [
     distance: '50 min drive',
     image: '/images/attractions/riverside-mercantile.png',
     highlights: ['Ice Cream', 'Local Goods', 'Gift Store'],
+    website: 'https://www.facebook.com/RiversideMercantile/',
   },
   {
     id: 'garden-gods-outpost',
@@ -1764,6 +1784,7 @@ export const attractions: Attraction[] = [
     distance: '35 min drive',
     image: '/images/attractions/garden-gods-outpost.png',
     highlights: ['Ice Cream', 'Gifts', 'Big Foot Photo Op'],
+    website: 'https://www.facebook.com/gardenofthegodsoutpost/',
   },
   {
     id: 'steam-cafe',
@@ -1776,6 +1797,7 @@ export const attractions: Attraction[] = [
     distance: '30 min drive',
     image: '/images/attractions/steam-cafe.png',
     highlights: ['Specialty Coffee', 'Breakfast All Day', 'Big Foot Selfie'],
+    website: 'https://www.facebook.com/steamcafe/',
   },
   {
     id: 'freight-house',
