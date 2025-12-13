@@ -9,7 +9,7 @@ import OutdoorsSubcategoryFilter, { OutdoorsSubcategoryOption } from './Outdoors
 import AttractionCard from './AttractionCard';
 
 const AttractionsGrid = () => {
-  const [activeCategory, setActiveCategory] = useState<Category>('all');
+  const [activeCategory, setActiveCategory] = useState<Category>('food');
   const [activeRegion, setActiveRegion] = useState<RegionOption>('all');
   const [activeFoodSubcategory, setActiveFoodSubcategory] = useState<FoodSubcategoryOption>('all');
   const [activeWinerySubcategory, setActiveWinerySubcategory] = useState<WinerySubcategoryOption>('all');
@@ -34,7 +34,7 @@ const AttractionsGrid = () => {
 
   const filteredAttractions = useMemo(() => {
     return attractions.filter((a) => {
-      const categoryMatch = activeCategory === 'all' || 
+      const categoryMatch = 
         (Array.isArray(a.category) ? a.category.includes(activeCategory) : a.category === activeCategory);
       const regionMatch = activeRegion === 'all' || a.region === activeRegion;
       const foodSubcategoryMatch = 
@@ -130,7 +130,6 @@ const AttractionsGrid = () => {
         {/* Results Count */}
         <p className="mb-6 text-center text-sm text-muted-foreground">
           Showing {filteredAttractions.length} {filteredAttractions.length === 1 ? 'place' : 'places'}
-          {activeCategory !== 'all' && ' in this category'}
           {activeRegion !== 'all' && ` • ${activeRegion.charAt(0).toUpperCase() + activeRegion.slice(1)} region`}
         </p>
 

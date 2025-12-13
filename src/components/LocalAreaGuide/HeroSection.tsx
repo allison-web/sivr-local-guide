@@ -2,7 +2,7 @@ import heroImage from '@/assets/hero-local-guide.jpg';
 
 const HeroSection = () => {
   return (
-    <section className="relative h-[70vh] min-h-[500px] overflow-hidden">
+    <section className="relative h-[50vh] min-h-[350px] sm:h-[60vh] sm:min-h-[450px] md:h-[70vh] md:min-h-[500px] overflow-hidden">
       {/* Background Image */}
       <div className="absolute inset-0">
         <img
@@ -28,13 +28,22 @@ const HeroSection = () => {
           of Shawnee National Forest and Southern Illinois
         </p>
 
-        {/* Scroll Indicator */}
-        <div className="absolute bottom-8 left-1/2 -translate-x-1/2 animate-fade-up [animation-delay:400ms]">
-          <div className="flex flex-col items-center gap-2 text-primary-foreground/70">
-            <span className="text-sm font-medium tracking-wide">Explore</span>
-            <div className="h-12 w-6 rounded-full border-2 border-primary-foreground/30 p-1">
-              <div className="h-2 w-2 animate-bounce rounded-full bg-primary-foreground/70" />
-            </div>
+        {/* Animated Down Arrow */}
+        <div className="absolute bottom-6 sm:bottom-8 left-1/2 -translate-x-1/2 animate-fade-up [animation-delay:400ms]">
+          <div className="animate-bounce">
+            <svg 
+              className="h-8 w-8 sm:h-10 sm:w-10 text-primary-foreground/80" 
+              fill="none" 
+              stroke="currentColor" 
+              viewBox="0 0 24 24"
+            >
+              <path 
+                strokeLinecap="round" 
+                strokeLinejoin="round" 
+                strokeWidth={2} 
+                d="M19 14l-7 7m0 0l-7-7m7 7V3" 
+              />
+            </svg>
           </div>
         </div>
       </div>
